@@ -1,0 +1,1816 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conheça a Vital Kali - Espaço de saúde integrativa, cuidado ético e transformação consciente">
+  <meta name="keywords" content="Vital Kali, sobre nós, saúde integrativa, cuidado humano, Rosângela Conceição Silva, enfermeira, pilates, yoga, acupuntura">
+  <meta property="og:title" content="Sobre a Vital Kali - Wellness Studio">
+  <meta property="og:description" content="Saúde integrativa para transformar dores em caminhos de cura">
+  <meta property="og:url" content="https://vitalkali.com.br/sobre.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Sobre a Vital Kali - Wellness Studio</title>
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    /* Reset and Base Styles - Mantendo identidade visual */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Vital Kali brand colors - Mesmas cores do site principal */
+  --background: #FBF9F3;       /* bege claro da flor */
+  --foreground: #4F5F58;       /* verde escuro da logo */
+
+  --primary: #F28C5A;          /* laranja Vital Kali */
+  --primary-hover: #E07B49;    /* laranja mais escuro */
+
+  --secondary: #8FA89A;        /* verde folha */
+  --muted: #F2EEE6;            /* bege suave */
+
+  --text-dark: #4F5F58;        /* texto principal */
+  --text-light: #7A8C84;       /* texto secundário */
+
+  --white: #FFFFFF;
+
+  --whatsapp: #25D366;
+  --whatsapp-hover: #128C7E;
+  --instagram: #E4405F;
+  --instagram-hover: #C13584;
+
+  --accent-blue: #6F857A;      /* verde acinzentado */
+  --accent-teal: #8FA89A;      /* verde Vital Kali */
+  --accent-earth: #B6A58F;     /* tom terroso da moldura */
+
+  /* Fonts */
+  --font-sans: "Inter", "system-ui", sans-serif;
+  --font-serif: "Cormorant Garamond", "Georgia", serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--background);
+  color: var(--foreground);
+  line-height: 1.6;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Folhas animadas no background */
+.animated-leaves {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.leaf {
+  position: absolute;
+  opacity: 0;
+  transition: transform 0.3s ease-out, opacity 0.5s ease;
+  z-index: -1;
+}
+
+.leaf img {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.1));
+}
+
+/* Folhas específicas - diferentes tamanhos e opacidades */
+.leaf-1 { width: 120px; height: 120px; opacity: 0.08; }
+.leaf-2 { width: 80px; height: 80px; opacity: 0.06; }
+.leaf-3 { width: 150px; height: 150px; opacity: 0.05; }
+.leaf-4 { width: 100px; height: 100px; opacity: 0.07; }
+.leaf-5 { width: 60px; height: 60px; opacity: 0.09; }
+
+/* Posições iniciais das folhas (fora da tela) */
+.leaf-1 { top: -150px; left: 5%; }
+.leaf-2 { top: -100px; right: 8%; }
+.leaf-3 { bottom: -150px; left: 10%; }
+.leaf-4 { bottom: -100px; right: 15%; }
+.leaf-5 { top: 50%; left: -80px; }
+
+/* Ensure images are responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  .leaf {
+    display: none;
+  }
+}
+
+/* Navigation Styles - IDÊNTICO AO SITE PRINCIPAL */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  transition: all 0.3s ease;
+  background-color: rgba(249, 247, 243, 0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(44, 62, 62, 0.1);
+  padding: 1rem 0;
+}
+
+.nav-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo img {
+  width: 140px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .nav-logo img {
+    width: 120px;
+  }
+}
+
+.nav-menu-desktop {
+  display: none;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .nav-menu-desktop {
+    display: flex;
+  }
+}
+
+.nav-link {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  color: var(--text-dark);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.nav-link:hover {
+  color: var(--primary);
+}
+
+.nav-cta {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  background-color: var(--primary);
+  color: var(--white);
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-block;
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(232, 137, 82, 0.2);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.nav-cta:hover {
+  background-color: var(--primary-hover);
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(232, 137, 82, 0.3);
+}
+
+.nav-mobile-toggle {
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  color: var(--text-dark);
+  transition: color 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .nav-mobile-toggle {
+    display: none;
+  }
+}
+
+.nav-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.nav-icon-hidden {
+  display: none;
+}
+
+.nav-mobile-toggle.active .nav-icon:first-child {
+  display: none;
+}
+
+.nav-mobile-toggle.active .nav-icon-hidden {
+  display: block;
+}
+
+.nav-menu-mobile {
+  display: none;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.nav-menu-mobile.active {
+  display: flex;
+  background-color: var(--white);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .nav-menu-mobile {
+    display: none !important;
+  }
+}
+
+.nav-link-mobile {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  color: var(--text-dark);
+  text-decoration: none;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
+
+.nav-link-mobile:hover {
+  color: var(--primary);
+}
+
+.nav-cta-mobile {
+  width: 100%;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  background-color: var(--primary);
+  color: var(--white);
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-block;
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(232, 137, 82, 0.2);
+  font-weight: 600;
+}
+
+.nav-cta-mobile:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(232, 137, 82, 0.3);
+}
+
+/* Dropdown Styles */
+.nav-dropdown {
+  position: relative;
+}
+
+.nav-dropdown-toggle {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  color: var(--text-dark);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.nav-dropdown-toggle:hover {
+  color: var(--primary);
+}
+
+.dropdown-icon {
+  font-size: 0.75rem;
+  transition: transform 0.3s ease;
+}
+
+.nav-dropdown:hover .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+.nav-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 280px;
+  background-color: var(--white);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(44, 62, 62, 0.15);
+  padding: 1rem 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 100;
+  border: 1px solid rgba(44, 62, 62, 0.1);
+}
+
+.nav-dropdown:hover .nav-dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.nav-dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: 20px;
+  width: 12px;
+  height: 12px;
+  background-color: var(--white);
+  transform: rotate(45deg);
+  border-left: 1px solid rgba(44, 62, 62, 0.1);
+  border-top: 1px solid rgba(44, 62, 62, 0.1);
+}
+
+.nav-dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  color: var(--text-dark);
+  text-decoration: none;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+  border-left: 3px solid transparent;
+}
+
+.nav-dropdown-item:hover {
+  background-color: rgba(242, 140, 90, 0.05);
+  color: var(--primary);
+  border-left: 3px solid var(--primary);
+  padding-left: 1.75rem;
+}
+
+.nav-dropdown-item i {
+  width: 16px;
+  text-align: center;
+  color: var(--accent-teal);
+}
+
+.nav-dropdown-item:hover i {
+  color: var(--primary);
+}
+
+/* Mobile Accordion */
+.mobile-accordion {
+  border-bottom: 1px solid rgba(44, 62, 62, 0.1);
+}
+
+.mobile-accordion-toggle {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  padding: 0.75rem 0;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  color: var(--text-dark);
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.mobile-accordion-toggle:hover {
+  color: var(--primary);
+}
+
+.accordion-icon {
+  font-size: 0.75rem;
+  transition: transform 0.3s ease;
+}
+
+.mobile-accordion-toggle.active .accordion-icon {
+  transform: rotate(180deg);
+}
+
+.mobile-accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding-left: 1rem;
+}
+
+.mobile-accordion-content.active {
+  max-height: 500px;
+}
+
+.mobile-accordion-content .nav-link-mobile {
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.mobile-accordion-content .nav-link-mobile i {
+  width: 16px;
+  text-align: center;
+  color: var(--accent-teal);
+}
+
+/* CORREÇÃO: Aumentado o espaço para o cabeçalho fixo na primeira seção */
+.sobre-section {
+  padding-top: 180px; /* Aumentado de 100px para 180px */
+  padding-bottom: 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .sobre-section {
+    padding-top: 150px; /* Aumentado de 90px para 150px */
+  }
+}
+
+.sobre-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Estilos para Layout Duas Colunas */
+.duas-colunas {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  margin-bottom: 6rem;
+}
+
+@media (min-width: 992px) {
+  .duas-colunas {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+  
+  .duas-colunas.reverse {
+    direction: rtl;
+  }
+  
+  .duas-colunas.reverse .col-texto,
+  .duas-colunas.reverse .col-imagem {
+    direction: ltr;
+  }
+}
+
+.col-texto {
+  display: flex;
+  flex-direction: column;
+}
+
+.col-imagem {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(44, 62, 62, 0.1);
+  position: relative;
+  min-height: 400px;
+}
+
+.col-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.col-imagem:hover img {
+  transform: scale(1.03);
+}
+
+/* Títulos e Textos */
+.sobre-titulo {
+  font-family: var(--font-serif);
+  font-size: 3.2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 768px) {
+  .sobre-titulo {
+    font-size: 2.5rem;
+  }
+}
+
+.sobre-subtitulo {
+  font-family: var(--font-sans);
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--primary);
+  margin-bottom: 2rem;
+  line-height: 1.4;
+}
+
+.sobre-texto {
+  font-family: var(--font-sans);
+  font-size: 1.15rem;
+  color: var(--text-dark);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  font-weight: 350;
+}
+
+.sobre-destaque {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  color: var(--text-dark);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.sobre-negrito {
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+/* Seção 1: Quem está por trás - ADICIONADO MAIS ESPAÇO */
+.quem-por-tras {
+  position: relative;
+  margin-top: 40px; /* Espaço adicional */
+}
+
+.foto-fundadora {
+  border: 8px solid var(--white);
+  box-shadow: 0 10px 30px rgba(44, 62, 62, 0.15);
+}
+
+/* Seção 2: Trajetória Profissional */
+.linha-tempo-section {
+  padding: 4rem 0;
+  margin: 4rem 0;
+  position: relative;
+}
+
+.linha-tempo-titulo {
+  font-family: var(--font-serif);
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  text-align: center;
+  margin-bottom: 4rem;
+  letter-spacing: 0.02em;
+}
+
+.linha-tempo-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 1rem;
+}
+
+/* Linha vertical central */
+.linha-tempo-container::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: var(--accent-teal);
+  opacity: 0.3;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+  .linha-tempo-container::before {
+    left: 30px;
+  }
+}
+
+/* Itens da linha do tempo */
+.linha-tempo-item {
+  position: relative;
+  margin-bottom: 3rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.linha-tempo-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.linha-tempo-conteudo {
+  position: relative;
+  background-color: var(--white);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 8px 25px rgba(44, 62, 62, 0.1);
+  border: 1px solid rgba(143, 168, 154, 0.2);
+}
+
+.linha-tempo-conteudo::before {
+  content: '';
+  position: absolute;
+  top: 24px;
+  width: 16px;
+  height: 16px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+/* Posicionamento alternado */
+.linha-tempo-item:nth-child(odd) .linha-tempo-conteudo {
+  margin-left: 50%;
+  padding-left: 2.5rem;
+}
+
+.linha-tempo-item:nth-child(odd) .linha-tempo-conteudo::before {
+  left: -8px;
+  transform: translateX(-50%);
+}
+
+.linha-tempo-item:nth-child(even) .linha-tempo-conteudo {
+  margin-right: 50%;
+  padding-right: 2.5rem;
+  text-align: right;
+}
+
+.linha-tempo-item:nth-child(even) .linha-tempo-conteudo::before {
+  right: -8px;
+  transform: translateX(50%);
+}
+
+@media (max-width: 768px) {
+  .linha-tempo-item:nth-child(odd) .linha-tempo-conteudo,
+  .linha-tempo-item:nth-child(even) .linha-tempo-conteudo {
+    margin-left: 60px;
+    margin-right: 0;
+    text-align: left;
+    padding-left: 2.5rem;
+    padding-right: 2rem;
+  }
+  
+  .linha-tempo-item:nth-child(odd) .linha-tempo-conteudo::before,
+  .linha-tempo-item:nth-child(even) .linha-tempo-conteudo::before {
+    left: -38px;
+    right: auto;
+    transform: translateX(0);
+  }
+}
+
+.linha-tempo-ano {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.linha-tempo-texto {
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+.linha-tempo-detalhes {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+}
+
+.linha-tempo-detalhes li {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: var(--text-light);
+  margin-bottom: 0.5rem;
+  list-style-type: disc;
+}
+
+/* Formação & Respaldo Profissional */
+.formacao-respaldo {
+  background-color: rgba(143, 168, 154, 0.08);
+  padding: 3rem;
+  border-radius: 16px;
+  margin-top: 3rem;
+  text-align: center;
+  border-left: 4px solid var(--primary);
+}
+
+.formacao-respaldo h3 {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+}
+
+.formacao-respaldo p {
+  font-family: var(--font-sans);
+  font-size: 1.1rem;
+  color: var(--text-dark);
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+/* Seção 3: Caminho Integrativo */
+.caminho-integrativo {
+  background-color: rgba(143, 168, 154, 0.05);
+  padding: 4rem 2rem;
+  border-radius: 16px;
+  margin: 4rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.caminho-integrativo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 300px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path fill="%23F28C5A" opacity="0.05" d="M10,50 Q50,10 90,50 Q50,90 10,50 Z M20,50 Q50,20 80,50 Q50,80 20,50 Z"/></svg>');
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 0;
+}
+
+.caminho-integrativo .col-texto {
+  position: relative;
+  z-index: 1;
+}
+
+/* Seção 4: Propósito */
+.secao-proposito {
+  position: relative;
+}
+
+.secao-proposito .col-texto {
+  background-color: rgba(242, 140, 90, 0.03);
+  padding: 2rem;
+  border-radius: 12px;
+  border-left: 4px solid var(--primary);
+}
+
+/* Seção 5: Por que Vital Kali? */
+.por-que-vitalkali {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.por-que-vitalkali .sobre-titulo {
+  margin-bottom: 2.5rem;
+}
+
+.por-que-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .por-que-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.por-que-item {
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(44, 62, 62, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.por-que-item:hover {
+  transform: translateY(-5px);
+}
+
+.por-que-item h3 {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.por-que-item p {
+  font-family: var(--font-sans);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* Seção 6: Nosso Cuidado */
+.nosso-cuidado {
+  text-align: center;
+  padding: 5rem 0;
+  background-color: rgba(242, 140, 90, 0.05);
+  margin-top: 4rem;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.nosso-cuidado-texto {
+  font-family: var(--font-sans);
+  font-size: 1.3rem;
+  color: var(--text-dark);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nosso-cuidado-destaque {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-top: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* Botões de Ação após Nosso Cuidado */
+.botoes-acao {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 500px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .botoes-acao {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 800px;
+  }
+}
+
+.botao-whatsapp, .botao-instagram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.2rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: center;
+  flex: 1;
+  min-width: 250px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.botao-whatsapp {
+  background-color: var(--whatsapp);
+  color: white;
+}
+
+.botao-whatsapp:hover {
+  background-color: var(--whatsapp-hover);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(37, 211, 102, 0.3);
+}
+
+.botao-instagram {
+  background-color: var(--instagram);
+  color: white;
+}
+
+.botao-instagram:hover {
+  background-color: var(--instagram-hover);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(228, 64, 95, 0.3);
+}
+
+.botao-whatsapp i, .botao-instagram i {
+  font-size: 1.3rem;
+}
+
+/* Animações de entrada */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* WhatsApp Floating Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 6rem;
+  right: 2rem;
+  background-color: var(--whatsapp);
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+  z-index: 1000;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 1.8rem;
+  opacity: 0;
+  transform: translateY(20px) scale(0.8);
+  animation: floatIn 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards 2s;
+}
+
+@keyframes floatIn {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.whatsapp-float:hover {
+  background-color: var(--whatsapp-hover);
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+}
+
+.whatsapp-float::after {
+  content: "Agendar";
+  position: absolute;
+  right: 70px;
+  background-color: var(--primary);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  font-family: var(--font-sans);
+  font-weight: 600;
+}
+
+.whatsapp-float:hover::after {
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .whatsapp-float {
+    width: 70px;
+    height: 70px;
+    font-size: 2rem;
+  }
+}
+
+/* Footer Styles - IDÊNTICO AO SITE PRINCIPAL */
+.site-footer {
+  background-color: var(--accent-blue);
+  color: var(--white);
+  padding: 4rem 0 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .footer-content {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+}
+
+.footer-logo {
+  max-width: 200px;
+  margin-bottom: 1.5rem;
+}
+
+.footer-logo img {
+  width: 100%;
+  height: auto;
+}
+
+.footer-description {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.footer-title {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.footer-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 2px;
+  background-color: var(--primary);
+}
+
+.footer-links {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 0.75rem;
+}
+
+.footer-links a {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-links a:hover {
+  color: var(--primary);
+  transform: translateX(5px);
+}
+
+.footer-contact {
+  list-style: none;
+}
+
+.footer-contact li {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.footer-contact i {
+  color: var(--primary);
+  font-size: 1.1rem;
+  margin-top: 0.25rem;
+  flex-shrink: 0;
+}
+
+.footer-contact span {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.5;
+}
+
+.footer-social {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.footer-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--white);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+}
+
+.footer-social a:hover {
+  background-color: var(--primary);
+  transform: translateY(-3px);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.footer-copyright {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+}
+
+.footer-legal {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-legal a {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-legal a:hover {
+  color: var(--primary);
+}
+  </style>
+</head>
+<body>
+  <!-- Folhas animadas no background -->
+  <div class="animated-leaves">
+    <div class="leaf leaf-1">
+      <svg viewBox="0 0 100 100" fill="#8FA89A">
+        <path d="M50,20 C70,10 90,20 80,40 C90,60 70,80 50,70 C30,80 10,60 20,40 C10,20 30,10 50,20 Z"/>
+      </svg>
+    </div>
+    <div class="leaf leaf-2">
+      <svg viewBox="0 0 100 100" fill="#4F5F58">
+        <path d="M50,30 Q80,10 110,30 Q140,50 110,70 Q80,90 50,70 Q20,50 50,30 Z"/>
+      </svg>
+    </div>
+    <div class="leaf leaf-3">
+      <svg viewBox="0 0 100 100" fill="#F28C5A">
+        <path d="M30,20 Q60,5 80,30 Q70,60 40,65 Q20,50 30,20 Z"/>
+      </svg>
+    </div>
+    <div class="leaf leaf-4">
+      <svg viewBox="0 0 100 100" fill="#6F857A">
+        <path d="M60,15 Q85,25 75,50 Q85,75 60,85 Q35,75 45,50 Q35,25 60,15 Z"/>
+      </svg>
+    </div>
+    <div class="leaf leaf-5">
+      <svg viewBox="0 0 100 100" fill="#B6A58F">
+        <path d="M40,40 Q60,20 80,40 Q70,70 40,80 Q20,60 40,40 Z"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/5511976366471?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Vital%20Kali." 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     class="whatsapp-float"
+     aria-label="Falar com a Vital Kali via WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Navigation - IDÊNTICO AO SITE PRINCIPAL -->
+  <nav id="navigation" class="nav">
+    <div class="nav-container">
+      <div class="nav-content">
+        <!-- Logo -->
+        <a href="index.html" class="nav-logo">
+          <img src="d5997227-cf04-447c-ae5d-3111d809608d.png" 
+               alt="Logo Vital Kali - Wellness Studio" 
+               width="150" 
+               height="150"
+               loading="eager">
+        </a>
+
+        <!-- Desktop Menu -->
+        <div class="nav-menu-desktop">
+          <a href="index.html" class="nav-link">Início</a>
+          
+          <!-- Serviços com Dropdown -->
+          <div class="nav-dropdown">
+            <button class="nav-link nav-dropdown-toggle">
+              Serviços <i class="fas fa-chevron-down dropdown-icon"></i>
+            </button>
+            <div class="nav-dropdown-menu">
+              <a href="pilates.html" class="nav-dropdown-item">
+                <i class="fas fa-dumbbell"></i> Pilates Terapêutico
+              </a>
+              <a href="yoga.html" class="nav-dropdown-item">
+                <i class="fas fa-spa"></i> Yoga Vinyasa Flow
+              </a>
+              <a href="yoga.html" class="nav-dropdown-item">
+                <i class="fas fa-brain"></i> Meditação
+              </a>
+              <a href="massagem.html" class="nav-dropdown-item">
+                <i class="fas fa-hands"></i> Massagem Terapêutica
+              </a>
+              <a href="acupuntura.html" class="nav-dropdown-item">
+                <i class="fas fa-leaf"></i> Acupuntura Sistêmica
+              </a>
+            
+            </div>
+          </div>
+          
+          <a href="sobre.html" class="nav-link" style="color: var(--primary); font-weight: 600;">Sobre</a>
+          <a href="index.html#espaco" class="nav-link">Espaço</a>
+          <a href="agendamento.html" class="nav-link">Agendamento</a>
+          <a href="https://wa.me/5511976366471?text=Olá!%20Gostaria%20de%20agendar%20um%20atendimento%20na%20Vital%20Kali." target="_blank" rel="noopener noreferrer" class="nav-cta">
+            Agende sua sessão
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="nav-mobile-toggle" id="mobileToggle" aria-label="Menu principal">
+          <svg class="nav-icon" id="menuIcon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+          <svg class="nav-icon nav-icon-hidden" id="closeIcon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="nav-menu-mobile" id="mobileMenu">
+        <a href="index.html" class="nav-link-mobile">Início</a>
+        
+        <!-- Serviços Mobile com Accordion -->
+        <div class="mobile-accordion">
+          <button class="mobile-accordion-toggle">
+            Serviços <i class="fas fa-chevron-down accordion-icon"></i>
+          </button>
+          <div class="mobile-accordion-content">
+            <a href="pilates.html" class="nav-link-mobile">
+              <i class="fas fa-dumbbell"></i> Pilates Terapêutico
+            </a>
+            <a href="yoga.html" class="nav-link-mobile">
+              <i class="fas fa-spa"></i> Yoga Vinyasa Flow
+            </a>
+            <a href="meditacao.html" class="nav-link-mobile">
+              <i class="fas fa-brain"></i> Meditação
+            </a>
+            <a href="massagem.html" class="nav-link-mobile">
+              <i class="fas fa-hands"></i> Massagem Terapêutica
+            </a>
+            <a href="acupuntura.html" class="nav-link-mobile">
+              <i class="fas fa-leaf"></i> Acupuntura Sistêmica
+            </a>
+            <a href="ventosaterapia.html" class="nav-link-mobile">
+              <i class="fas fa-wind"></i> Ventosaterapia
+            </a>
+            <a href="auriculoterapia.html" class="nav-link-mobile">
+              <i class="fas fa-ear"></i> Auriculoterapia
+            </a>
+          </div>
+        </div>
+        
+        <a href="sobre.html" class="nav-link-mobile" style="color: var(--primary); font-weight: 600;">Sobre</a>
+        <a href="index.html#espaco" class="nav-link-mobile">Espaço</a>
+        <a href="agendamento.html" class="nav-link-mobile">Agendamento</a>
+        <a href="https://wa.me/5511976366471?text=Olá!%20Gostaria%20de%20agendar%20um%20atendimento%20na%20Vital%20Kali." target="_blank" rel="noopener noreferrer" class="nav-cta-mobile">
+          Agende sua sessão
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Conteúdo Principal -->
+  <main class="sobre-section">
+    <div class="sobre-container">
+      
+      <!-- SEÇÃO 1: Quem está por trás da Vital Kali -->
+      <section class="duas-colunas quem-por-tras fade-in">
+        <div class="col-texto">
+          <h1 class="sobre-titulo">Quem está por trás da Vital Kali</h1>
+          <p class="sobre-texto">
+            Conduzida por <span class="sobre-negrito">Rosângela Conceição Silva</span>, enfermeira com mais de <span class="sobre-negrito">23 anos de experiência na área hospitalar</span>, dedicada à promoção da qualidade de vida por meio do cuidado integrativo, ético e humanizado.
+          </p>
+          <p class="sobre-texto">
+            Sua trajetória é marcada pela busca incessante por conhecimento e pela vontade de oferecer um cuidado que vá além do convencional — um cuidado que veja a pessoa como um todo.
+          </p>
+          <p class="sobre-texto">
+            Profissional registrada no <span class="sobre-negrito">COREN-SP</span> e <span class="sobre-negrito">COFEN</span>, Rosângela combina rigor técnico, sensibilidade e escuta ativa em cada atendimento.
+          </p>
+          <p class="sobre-destaque">
+            "Meu propósito é transformar dores em caminhos de cura, guiando cada pessoa na jornada de reconexão consigo mesma."
+          </p>
+        </div>
+        <div class="col-imagem foto-fundadora">
+          <img src="mamaesentada.jpeg" 
+               alt="Rosângela Conceição Silva - Enfermeira e fundadora da Vital Kali" 
+               loading="lazy">
+        </div>
+      </section>
+
+      <!-- SEÇÃO 2: Trajetória Profissional -->
+      <section class="linha-tempo-section fade-in">
+        <h2 class="linha-tempo-titulo">Trajetória Profissional</h2>
+        <div class="linha-tempo-container">
+          
+          <!-- Item 1 -->
+          <div class="linha-tempo-item">
+            <div class="linha-tempo-conteudo">
+              <div class="linha-tempo-ano">Enfermeira com registro ativo</div>
+              <p class="linha-tempo-texto">
+                Profissional com mais de duas décadas de experiência na área hospitalar, dedicada ao cuidado humano e ético.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="linha-tempo-item">
+            <div class="linha-tempo-conteudo">
+              <div class="linha-tempo-ano">Especialista em Práticas Integrativas</div>
+              <p class="linha-tempo-texto">
+                Ampliação do olhar para o cuidado além da técnica convencional, incorporando abordagens holísticas que consideram o ser humano em sua totalidade.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="linha-tempo-item">
+            <div class="linha-tempo-conteudo">
+              <div class="linha-tempo-ano">Pós-graduação em Pilates</div>
+              <p class="linha-tempo-texto">
+                Capacitação no Método Pilates com cursos, workshops e aprofundamentos em diversas áreas:
+              </p>
+              <ul class="linha-tempo-detalhes">
+                <li>Patologias da coluna e articulações</li>
+                <li>Reeducação Postural Global (RPG)</li>
+                <li>Pilates para crianças e idosos</li>
+                <li>Pilates para gestantes</li>
+                <li>Mat Pilates (solo)</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="linha-tempo-item">
+            <div class="linha-tempo-conteudo">
+              <div class="linha-tempo-ano">Especialista em Acupuntura e Medicina Tradicional Chinesa</div>
+              <p class="linha-tempo-texto">
+                Formação completa em Acupuntura Sistêmica e Medicina Tradicional Chinesa, com estudo profundo dos meridianos energéticos, pontos de acupuntura e fundamentos da medicina oriental.
+              </p>
+            </div>
+          </div>
+
+        </div>
+        
+        <!-- Formação & Respaldo Profissional -->
+        <div class="formacao-respaldo fade-in">
+          <h3>Formação & Respaldo Profissional</h3>
+          <p>Formações e especialidades reconhecidas e registradas no COREN-SP e no COFEN</p>
+        </div>
+      </section>
+
+      <!-- SEÇÃO 3: Caminho Integrativo -->
+      <section class="duas-colunas reverse caminho-integrativo fade-in">
+        <div class="col-texto">
+          <h2 class="sobre-titulo">Caminho Integrativo</h2>
+          <p class="sobre-texto">
+            As dores físicas conduziram ao Pilates.
+          </p>
+          <p class="sobre-texto">
+            As dores emocionais levaram ao Yoga.
+          </p>
+          <p class="sobre-texto">
+            A Medicina Tradicional Chinesa ampliou o olhar para a dor, mostrando que o cuidado efetivo vai além da técnica e envolve movimento, hábitos de vida, sono e alimentação.
+          </p>
+          <p class="sobre-destaque">
+            Da integração desses pilares nasce uma proposta de cuidado ética, acolhedora e individualizada.
+          </p>
+        </div>
+        <div class="col-imagem">
+          <img src="foto2.jpeg" 
+               alt="Integração de práticas terapêuticas - pilates, yoga e medicina tradicional chinesa" 
+               loading="lazy">
+        </div>
+      </section>
+
+      <!-- SEÇÃO 4: Propósito da Vital Kali -->
+      <section class="duas-colunas secao-proposito fade-in">
+        <div class="col-texto">
+          <h2 class="sobre-titulo">Propósito da Vital Kali</h2>
+          <h3 class="sobre-subtitulo">Saúde integrativa para transformar dores em caminhos de cura.</h3>
+          <p class="sobre-texto">
+            A Vital Kali é um espaço de cuidado integral que promove autoconhecimento, equilíbrio e movimento corporal e energético, despertando a potência de cada ser em todas as fases da vida.
+          </p>
+          <p class="sobre-texto">
+            Aqui, cada atendimento é uma jornada de reconexão consigo mesmo, onde o corpo, a mente e as emoções são acolhidos com respeito e expertise.
+          </p>
+          <p class="sobre-destaque">
+            Transformar dores físicas, emocionais e espirituais em caminhos de cura, por meio do autoconhecimento, do equilíbrio e do movimento consciente.
+          </p>
+          <p class="sobre-texto">
+            Acreditamos que cada dor carrega um ensinamento. Nosso trabalho é guiar você nessa travessia, oferecendo ferramentas para que você se reconheça, se fortaleça e se transforme.
+          </p>
+        </div>
+        <div class="col-imagem">
+          <img src="mamaeempe2.jpeg" 
+               alt="Espaço Vital Kali - ambiente tranquilo e acolhedor para práticas integrativas" 
+               loading="lazy">
+        </div>
+      </section>
+
+      <!-- SEÇÃO 5: Por que Vital Kali? -->
+      <section class="por-que-vitalkali fade-in">
+        <h2 class="sobre-titulo">Por que Vital Kali?</h2>
+        <div class="por-que-grid">
+          <div class="por-que-item">
+            <h3>Vital</h3>
+            <p>Pela energia e pela vida que pulsam em cada ser. Pelo movimento que restaura, pelo cuidado que revitaliza.</p>
+          </div>
+          <div class="por-que-item">
+            <h3>Kali</h3>
+            <p>Pela força de transformação — que remove o que não faz bem para dar espaço ao novo — e também pelo nome que inspira esse propósito diariamente.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEÇÃO 6: Nosso Cuidado -->
+      <section class="nosso-cuidado fade-in">
+        <div class="sobre-container">
+          <p class="nosso-cuidado-texto">
+            <strong>Nosso cuidado</strong><br><br>
+            Atendimentos integrativos, personalizados e humanizados, respeitando a história, o momento e as necessidades de cada pessoa.
+          </p>
+          <p class="nosso-cuidado-destaque">
+            Vital Kali é cuidado, movimento, energia e transformação consciente.
+          </p>
+        </div>
+      </section>
+
+      <!-- Botões de Ação -->
+      <div class="botoes-acao fade-in">
+        <a href="https://wa.me/5511976366471?text=Olá!%20Gostaria%20de%20agendar%20uma%20sessão%20na%20Vital%20Kali." 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="botao-whatsapp">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>Agende sua sessão</span>
+        </a>
+        
+        <a href="https://www.instagram.com/vitalkali_saudeintegrativa/" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="botao-instagram">
+          <i class="fa-brands fa-instagram"></i>
+          <span>Conheça nosso Instagram</span>
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer - IDÊNTICO AO SITE PRINCIPAL -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <!-- Logo and Description -->
+        <div class="footer-col">
+          <div class="footer-logo">
+            <img src="d5997227-cf04-447c-ae5d-3111d809608d.png" alt="Logo Vital Kali">
+          </div>
+          <p class="footer-description">
+            Espaço de bem-estar dedicado a promover saúde e equilíbrio através de práticas integrativas como Pilates, Yoga, Massagem e Acupuntura.
+          </p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/vitalkali_saudeintegrativa/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/5511976366471" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61587118406898i" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h3 class="footer-title">Links Rápidos</h3>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fas fa-chevron-right"></i> Início</a></li>
+            <li><a href="sobre.html"><i class="fas fa-chevron-right"></i> Sobre Nós</a></li>
+            <li><a href="index.html#espaco"><i class="fas fa-chevron-right"></i> Nosso Espaço</a></li>
+            <li><a href="agendamento.html"><i class="fas fa-chevron-right"></i> Agendamento</a></li>
+            <li><a href="contato.html"><i class="fas fa-chevron-right"></i> Contato</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-col">
+          <h3 class="footer-title">Serviços</h3>
+          <ul class="footer-links">
+            <li><a href="pilates.html"><i class="fas fa-chevron-right"></i> Pilates Terapêutico</a></li>
+            <li><a href="yoga.html"><i class="fas fa-chevron-right"></i> Yoga Vinyasa Flow</a></li>
+            <li><a href="massagem.html"><i class="fas fa-chevron-right"></i> Massagem Terapêutica</a></li>
+            <li><a href="acupuntura.html"><i class="fas fa-chevron-right"></i> Acupuntura Sistêmica</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-col">
+          <h3 class="footer-title">Contato</h3>
+          <ul class="footer-contact">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>R. José Antônio Fontes, 498<br>Vila Tolstoi, São Paulo - SP<br>03255-000</span>
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <span>(11) 97636-6471</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span>contato@vitalkali.com.br</span>
+            </li>
+            <li>
+              <i class="fas fa-clock"></i>
+              <span>Seg-Sex: 7h às 21h<br>Sábado: 8h às 14h</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          &copy; 2024 Vital Kali - Wellness Studio. Todos os direitos reservados.
+        </p>
+        <div class="footer-legal">
+          <a href="politica-privacidade.html">Política de Privacidade</a>
+          <a href="termos-uso.html">Termos de Uso</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Navigation scroll effect
+    const nav = document.getElementById("navigation");
+    const mobileToggle = document.getElementById("mobileToggle");
+    const mobileMenu = document.getElementById("mobileMenu");
+    const mobileLinks = document.querySelectorAll(".nav-link-mobile");
+
+    // Mobile menu toggle
+    mobileToggle.addEventListener("click", () => {
+      mobileToggle.classList.toggle("active");
+      mobileMenu.classList.toggle("active");
+    });
+
+    // Close mobile menu when clicking a link
+    mobileLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        mobileToggle.classList.remove("active");
+        mobileMenu.classList.remove("active");
+      });
+    });
+
+    // Mobile Accordion
+    const mobileAccordionToggle = document.querySelector('.mobile-accordion-toggle');
+    const mobileAccordionContent = document.querySelector('.mobile-accordion-content');
+
+    if (mobileAccordionToggle && mobileAccordionContent) {
+      mobileAccordionToggle.addEventListener('click', () => {
+        mobileAccordionToggle.classList.toggle('active');
+        mobileAccordionContent.classList.toggle('active');
+      });
+    }
+
+    // Animações de scroll para elementos fade-in
+    const fadeElements = document.querySelectorAll('.fade-in');
+    const timelineItems = document.querySelectorAll('.linha-tempo-item');
+
+    function checkScroll() {
+      // Para elementos fade-in
+      fadeElements.forEach(element => {
+        const elementTop = element.getBoundingClientRect().top;
+        const elementVisible = 150;
+        
+        if (elementTop < window.innerHeight - elementVisible) {
+          element.classList.add('visible');
+        }
+      });
+
+      // Para itens da linha do tempo
+      timelineItems.forEach(element => {
+        const elementTop = element.getBoundingClientRect().top;
+        const elementVisible = 100;
+        
+        if (elementTop < window.innerHeight - elementVisible) {
+          element.classList.add('visible');
+        }
+      });
+    }
+
+    // Animação das folhas com scroll do mouse
+    function animateLeavesOnScroll() {
+      const leaves = document.querySelectorAll('.leaf');
+      const scrollY = window.scrollY;
+      const windowHeight = window.innerHeight;
+      
+      leaves.forEach((leaf, index) => {
+        // Atraso diferente para cada folha
+        const delay = index * 0.5;
+        // Velocidade diferente para cada folha
+        const speed = 0.3 + (index * 0.1);
+        
+        // Calcular posição baseada no scroll
+        const yPos = scrollY * speed;
+        const xPos = Math.sin(scrollY / 500 + index) * 50;
+        
+        // Aplicar transformação com transição suave
+        leaf.style.transition = 'transform 0.8s cubic-bezier(0.2, 0.8, 0.4, 1)';
+        leaf.style.transform = `translate(${xPos}px, ${yPos}px) rotate(${scrollY * 0.05}deg)`;
+        
+        // Aumentar opacidade quando a folha entra na tela
+        const leafTop = leaf.getBoundingClientRect().top;
+        if (leafTop < windowHeight && leafTop > -200) {
+          leaf.style.opacity = leaf.classList.contains('leaf-1') ? '0.08' : 
+                              leaf.classList.contains('leaf-2') ? '0.06' :
+                              leaf.classList.contains('leaf-3') ? '0.05' :
+                              leaf.classList.contains('leaf-4') ? '0.07' : '0.09';
+        }
+      });
+    }
+
+    // Inicializar folhas com pequeno delay
+    setTimeout(() => {
+      const leaves = document.querySelectorAll('.leaf');
+      leaves.forEach(leaf => {
+        leaf.style.transition = 'opacity 1.5s ease, transform 2s ease';
+        leaf.style.opacity = '0';
+      });
+      
+      // Animar entrada das folhas
+      setTimeout(() => {
+        leaves.forEach((leaf, index) => {
+          setTimeout(() => {
+            leaf.style.opacity = leaf.classList.contains('leaf-1') ? '0.08' : 
+                                leaf.classList.contains('leaf-2') ? '0.06' :
+                                leaf.classList.contains('leaf-3') ? '0.05' :
+                                leaf.classList.contains('leaf-4') ? '0.07' : '0.09';
+          }, index * 300);
+        });
+      }, 500);
+    }, 1000);
+
+    // Initial check
+    window.addEventListener('load', () => {
+      checkScroll();
+      animateLeavesOnScroll();
+    });
+    
+    // Check on scroll
+    window.addEventListener('scroll', () => {
+      checkScroll();
+      animateLeavesOnScroll();
+    });
+
+    // Smooth scroll for all anchor links with offset
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        
+        // Only handle internal anchor links
+        if (href.startsWith('#') && href !== '#') {
+          e.preventDefault();
+          
+          const targetId = href.substring(1);
+          const targetElement = document.getElementById(targetId);
+          
+          if (targetElement) {
+            // Close mobile menu if open
+            mobileToggle.classList.remove('active');
+            mobileMenu.classList.remove('active');
+            
+            // Close mobile accordion
+            if (mobileAccordionToggle && mobileAccordionContent) {
+              mobileAccordionToggle.classList.remove('active');
+              mobileAccordionContent.classList.remove('active');
+            }
+            
+            // Smooth scroll to target with offset for fixed header
+            const headerOffset = 180; // Ajustado para o novo espaçamento
+            const elementPosition = targetElement.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+            
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: 'smooth'
+            });
+          }
+        }
+      });
+    });
+
+    // Adicionar animação inicial para alguns elementos
+    document.addEventListener('DOMContentLoaded', function() {
+      // Animar primeira seção imediatamente
+      const firstSection = document.querySelector('.quem-por-tras');
+      if (firstSection) {
+        firstSection.classList.add('visible');
+      }             
+    });
+
+    // Efeito de movimento suave das folhas com mouse move (opcional)
+    document.addEventListener('mousemove', (e) => {
+      const leaves = document.querySelectorAll('.leaf');
+      const mouseX = e.clientX / window.innerWidth;
+      const mouseY = e.clientY / window.innerHeight;
+      
+      leaves.forEach((leaf, index) => {
+        const speed = 0.5 + (index * 0.2);
+        const x = (mouseX - 0.5) * 20 * speed;
+        const y = (mouseY - 0.5) * 20 * speed;
+        
+        leaf.style.transform += ` translate(${x}px, ${y}px)`;
+      });
+    });
+  </script>
+</body>
+</html>

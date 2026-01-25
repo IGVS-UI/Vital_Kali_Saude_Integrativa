@@ -1,0 +1,1680 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pilates na Vital Kali - Pilates Terapêutico, para Idosos, Gestantes e Kids">
+  <meta name="keywords" content="pilates, pilates terapêutico, pilates para idosos, pilates gestante, pilates kids, vital kali, são paulo">
+  <meta property="og:title" content="Pilates na Vital Kali - Wellness Studio">
+  <meta property="og:description" content="Pilates Terapêutico, para Idosos, Gestantes e Kids com atendimento individualizado">
+  <meta property="og:url" content="https://vitalkali.com.br/pilates.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Pilates na Vital Kali - Wellness Studio</title>
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<style>
+  /* Reset and Base Styles - Mantendo identidade visual */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Vital Kali brand colors - Mesmas cores do site principal */
+  --background: #FBF9F3;       /* bege claro da flor */
+  --foreground: #4F5F58;       /* verde escuro da logo */
+
+  --primary: #F28C5A;          /* laranja Vital Kali */
+  --primary-hover: #E07B49;    /* laranja mais escuro */
+
+  --secondary: #8FA89A;        /* verde folha */
+  --muted: #F2EEE6;            /* bege suave */
+
+  --text-dark: #4F5F58;        /* texto principal */
+  --text-light: #7A8C84;       /* texto secundário */
+
+  --white: #FFFFFF;
+
+  --whatsapp: #25D366;
+  --whatsapp-hover: #128C7E;
+
+  --instagram: #E4405F;        /* Instagram pink */
+  --instagram-hover: #C13584;  /* Instagram pink hover */
+
+
+  --accent-blue: #6F857A;      /* verde acinzentado */
+  --accent-teal: #8FA89A;      /* verde Vital Kali */
+  --accent-earth: #B6A58F;     /* tom terroso da moldura */
+
+  /* Fonts */
+  --font-sans: "Inter", "system-ui", sans-serif;
+  --font-serif: "Cormorant Garamond", "Georgia", serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--background);
+  color: var(--foreground);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Ensure images are responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Navigation Styles - IDÊNTICO AO SITE PRINCIPAL */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  transition: all 0.3s ease;
+  background-color: rgba(249, 247, 243, 0.9);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(44, 62, 62, 0.1);
+  padding: 1rem 0;
+}
+
+.nav-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo img {
+  width: 140px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .nav-logo img {
+    width: 120px;
+  }
+}
+
+.nav-menu-desktop {
+  display: none;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .nav-menu-desktop {
+    display: flex;
+  }
+}
+
+.nav-link {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  color: var(--text-dark);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.nav-link:hover {
+  color: var(--primary);
+}
+
+.nav-cta {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  background-color: var(--primary);
+  color: var(--white);
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-block;
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(232, 137, 82, 0.2);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.nav-cta:hover {
+  background-color: var(--primary-hover);
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(232, 137, 82, 0.3);
+}
+
+.nav-mobile-toggle {
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  color: var(--text-dark);
+  transition: color 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .nav-mobile-toggle {
+    display: none;
+  }
+}
+
+.nav-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.nav-icon-hidden {
+  display: none;
+}
+
+.nav-mobile-toggle.active .nav-icon:first-child {
+  display: none;
+}
+
+.nav-mobile-toggle.active .nav-icon-hidden {
+  display: block;
+}
+
+.nav-menu-mobile {
+  display: none;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.nav-menu-mobile.active {
+  display: flex;
+  background-color: var(--white);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .nav-menu-mobile {
+    display: none !important;
+  }
+}
+
+.nav-link-mobile {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  color: var(--text-dark);
+  text-decoration: none;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
+
+.nav-link-mobile:hover {
+  color: var(--primary);
+}
+
+.nav-cta-mobile {
+  width: 100%;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  background-color: var(--primary);
+  color: var(--white);
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-block;
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(232, 137, 82, 0.2);
+  font-weight: 600;
+}
+
+.nav-cta-mobile:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(232, 137, 82, 0.3);
+}
+
+/* Dropdown Styles */
+.nav-dropdown {
+  position: relative;
+}
+
+.nav-dropdown-toggle {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  color: var(--text-dark);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.nav-dropdown-toggle:hover {
+  color: var(--primary);
+}
+
+.dropdown-icon {
+  font-size: 0.75rem;
+  transition: transform 0.3s ease;
+}
+
+.nav-dropdown:hover .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+.nav-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 280px;
+  background-color: var(--white);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(44, 62, 62, 0.15);
+  padding: 1rem 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 100;
+  border: 1px solid rgba(44, 62, 62, 0.1);
+}
+
+.nav-dropdown:hover .nav-dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.nav-dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: 20px;
+  width: 12px;
+  height: 12px;
+  background-color: var(--white);
+  transform: rotate(45deg);
+  border-left: 1px solid rgba(44, 62, 62, 0.1);
+  border-top: 1px solid rgba(44, 62, 62, 0.1);
+}
+
+.nav-dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  color: var(--text-dark);
+  text-decoration: none;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+  border-left: 3px solid transparent;
+}
+
+.nav-dropdown-item:hover {
+  background-color: rgba(242, 140, 90, 0.05);
+  color: var(--primary);
+  border-left: 3px solid var(--primary);
+  padding-left: 1.75rem;
+}
+
+.nav-dropdown-item i {
+  width: 16px;
+  text-align: center;
+  color: var(--accent-teal);
+}
+
+.nav-dropdown-item:hover i {
+  color: var(--primary);
+}
+
+/* Mobile Accordion */
+.mobile-accordion {
+  border-bottom: 1px solid rgba(44, 62, 62, 0.1);
+}
+
+.mobile-accordion-toggle {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  padding: 0.75rem 0;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  color: var(--text-dark);
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.mobile-accordion-toggle:hover {
+  color: var(--primary);
+}
+
+.accordion-icon {
+  font-size: 0.75rem;
+  transition: transform 0.3s ease;
+}
+
+.mobile-accordion-toggle.active .accordion-icon {
+  transform: rotate(180deg);
+}
+
+.mobile-accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding-left: 1rem;
+}
+
+.mobile-accordion-content.active {
+  max-height: 500px;
+}
+
+.mobile-accordion-content .nav-link-mobile {
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.mobile-accordion-content .nav-link-mobile i {
+  width: 16px;
+  text-align: center;
+  color: var(--accent-teal);
+}
+
+/* Hero Section para página Pilates */
+.pilates-hero {
+  position: relative;
+  height: 110vh;
+  min-height: 700px;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .pilates-hero {
+    height: 70vh;
+    min-height: 500px;
+  }
+}
+
+.pilates-hero-image {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.pilates-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.pilates-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(44, 62, 80, 0.85) 0%,
+    rgba(74, 124, 124, 0.75) 50%,
+    rgba(184, 163, 141, 0.65) 100%
+  );
+  mix-blend-mode: multiply;
+  z-index: 2;
+}
+
+.pilates-hero-content {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.pilates-hero-text {
+  max-width: 700px;
+}
+
+.pilates-hero-title {
+  font-family: var(--font-serif);
+  font-size: 4.5rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .pilates-hero-title {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .pilates-hero-title {
+    font-size: 2.8rem;
+  }
+}
+
+.pilates-hero-subtitle {
+  font-family: var(--font-sans);
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 3rem;
+  max-width: 600px;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .pilates-hero-subtitle {
+    font-size: 1.2rem;
+  }
+}
+
+.pilates-hero-cta {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  padding: 1.1rem 2.2rem;
+  border-radius: 9999px;
+  background-color: var(--primary);
+  color: var(--white);
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(0);
+  font-weight: 600;
+  min-width: 190px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 2px solid var(--primary);
+  box-shadow: 0 4px 12px rgba(232, 137, 82, 0.3);
+}
+
+.pilates-hero-cta:hover {
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(232, 137, 82, 0.4);
+}
+
+/* Seção Atendimentos */
+.pilates-services-section {
+  background-color: var(--background);
+  padding: 6rem 0;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .pilates-services-section {
+    padding: 8rem 0;
+  }
+}
+
+.pilates-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.pilates-section-title {
+  font-family: var(--font-serif);
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  text-align: center;
+  margin-bottom: 4rem;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 768px) {
+  .pilates-section-title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+}
+
+/* Grid de atendimentos */
+.pilates-services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+}
+
+@media (min-width: 768px) {
+  .pilates-services-grid {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+}
+
+/* Item de atendimento */
+.pilates-service-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pilates-service-item.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (min-width: 992px) {
+  .pilates-service-item {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+  
+  .pilates-service-item:nth-child(even) .pilates-service-image {
+    order: 2;
+  }
+  
+  .pilates-service-item:nth-child(even) .pilates-service-content {
+    order: 1;
+  }
+}
+
+.pilates-service-image {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(44, 62, 62, 0.15);
+  height: 400px;
+}
+
+.pilates-service-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.pilates-service-item:hover .pilates-service-image img {
+  transform: scale(1.05);
+}
+
+.pilates-service-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.pilates-service-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.pilates-service-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(242, 140, 90, 0.1), rgba(232, 137, 82, 0.05));
+  color: var(--primary);
+  font-size: 1.8rem;
+  flex-shrink: 0;
+}
+
+.pilates-service-title {
+  font-family: var(--font-serif);
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+  .pilates-service-title {
+    font-size: 1.8rem;
+  }
+}
+
+.pilates-service-description {
+  font-family: var(--font-sans);
+  color: var(--text-light);
+  line-height: 1.6;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.pilates-service-features {
+  list-style: none;
+  margin-bottom: 2rem;
+  padding: 0;
+}
+
+.pilates-service-features li {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  color: var(--text-light);
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.pilates-service-features i {
+  color: var(--accent-teal);
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+  flex-shrink: 0;
+}
+
+.pilates-service-cta {
+  align-self: flex-start;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  padding: 0.9rem 1.8rem;
+  border-radius: 9999px;
+  background-color: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 600;
+}
+
+.pilates-service-cta:hover {
+  background-color: var(--primary);
+  color: var(--white);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(242, 140, 90, 0.3);
+}
+
+/* Seção CTA final */
+.pilates-final-cta {
+  background-color: var(--muted);
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.pilates-final-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.pilates-final-title {
+  font-family: var(--font-serif);
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 768px) {
+  .pilates-final-title {
+    font-size: 2.5rem;
+  }
+}
+
+.pilates-final-text {
+  font-family: var(--font-sans);
+  font-size: 1.25rem;
+  color: var(--text-light);
+  margin-bottom: 3rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .pilates-final-text {
+    font-size: 1.1rem;
+  }
+}
+
+.pilates-final-button {
+ font-family: var(--font-sans);
+  font-size: 1.1rem;
+  padding: 1.3rem 2.8rem;
+  border-radius: 9999px;
+  background-color: var(--whatsapp);
+  color: var(--white);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(0);
+  font-weight: 600;
+  border: 2px solid var(--whatsapp);
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+  min-width: 280px;
+  justify-content: center;
+}
+
+.pilates-final-button:hover {
+   background-color: var(--whatsapp-hover);
+  border-color: var(--whatsapp-hover);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(37, 211, 102, 0.4);
+}
+
+/* Footer Styles - IDÊNTICO AO SITE PRINCIPAL */
+.site-footer {
+  background-color: var(--accent-blue);
+  color: var(--white);
+  padding: 4rem 0 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .footer-content {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+}
+
+.footer-logo {
+  max-width: 200px;
+  margin-bottom: 1.5rem;
+}
+
+.footer-logo img {
+  width: 100%;
+  height: auto;
+ 
+}
+
+.footer-description {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.footer-title {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.footer-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 2px;
+  background-color: var(--primary);
+}
+
+.footer-links {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 0.75rem;
+}
+
+.footer-links a {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-links a:hover {
+  color: var(--primary);
+  transform: translateX(5px);
+}
+
+.footer-contact {
+  list-style: none;
+}
+
+.footer-contact li {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.footer-contact i {
+  color: var(--primary);
+  font-size: 1.1rem;
+  margin-top: 0.25rem;
+  flex-shrink: 0;
+}
+
+.footer-contact span {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.5;
+}
+
+.footer-social {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.footer-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--white);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+}
+
+.footer-social a:hover {
+  background-color: var(--primary);
+  transform: translateY(-3px);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.footer-copyright {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+}
+
+.footer-legal {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-legal a {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-legal a:hover {
+  color: var(--primary);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scroll reveal animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Seção CTA final */
+.yoga-final-cta {
+  background-color: var(--background);
+  padding: 8rem 0;
+  text-align: center;
+}
+
+.yoga-final-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.yoga-final-title {
+  font-family: var(--font-serif);
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 2rem;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 768px) {
+  .yoga-final-title {
+    font-size: 2.8rem;
+  }
+}
+
+.yoga-final-text {
+  font-family: var(--font-sans);
+  font-size: 1.3rem;
+  color: var(--text-light);
+  margin-bottom: 3rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .yoga-final-text {
+    font-size: 1.15rem;
+  }
+}
+
+/* Container para os botões CTA */
+.yoga-final-buttons {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  .yoga-final-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+}
+
+.yoga-final-button {
+  font-family: var(--font-sans);
+  font-size: 1.1rem;
+  padding: 1.3rem 2.8rem;
+  border-radius: 9999px;
+  background-color: var(--whatsapp);
+  color: var(--white);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(0);
+  font-weight: 600;
+  border: 2px solid var(--whatsapp);
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+  min-width: 280px;
+  justify-content: center;
+}
+
+.yoga-final-button:hover {
+  background-color: var(--whatsapp-hover);
+  border-color: var(--whatsapp-hover);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(37, 211, 102, 0.4);
+}
+
+.yoga-final-button-instagram {
+  background-color: var(--instagram);
+  color: var(--white); 
+  border: 2px solid var(--instagram);
+  box-shadow: var(--instagram)
+}
+
+.yoga-final-button-instagram:hover {
+  background-color: var(--instagram-hover);
+  color: var(--white);
+  border: var(--instagram-hover);
+  box-shadow: var(--instagram-hover);
+}
+
+</style>
+<body>
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/5511976366471?text=Olá!%20Gostaria%20de%20agendar%20uma%20sessão%20de%20Pilates%20na%20Vital%20Kali." 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     class="whatsapp-float"
+     aria-label="Agendar Pilates via WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Navigation - IDÊNTICO AO SITE PRINCIPAL -->
+  <nav id="navigation" class="nav">
+    <div class="nav-container">
+      <div class="nav-content">
+        <!-- Logo -->
+        <a href="index.html" class="nav-logo">
+          <img src="d5997227-cf04-447c-ae5d-3111d809608d.png" 
+               alt="Logo Vital Kali - Wellness Studio" 
+               width="150" 
+               height="150"
+               loading="eager">
+        </a>
+
+        <!-- Desktop Menu -->
+        <div class="nav-menu-desktop">
+          <a href="index.html" class="nav-link">Início</a>
+          
+          <!-- Serviços com Dropdown -->
+          <div class="nav-dropdown">
+            <button class="nav-link nav-dropdown-toggle">
+              Serviços <i class="fas fa-chevron-down dropdown-icon"></i>
+            </button>
+            <div class="nav-dropdown-menu">
+              <a href="pilates.html" class="nav-dropdown-item">
+                <i class="fas fa-dumbbell"></i> Pilates Terapêutico
+              </a>
+              <a href="yoga.html" class="nav-dropdown-item">
+                <i class="fas fa-spa"></i> Yoga Vinyasa Flow
+              </a>
+              <a href="yoga.html" class="nav-dropdown-item">
+                <i class="fas fa-brain"></i> Meditação
+              </a>
+              <a href="massagem.html" class="nav-dropdown-item">
+                <i class="fas fa-hands"></i> Massagem Terapêutica
+              </a>
+              <a href="acupuntura.html" class="nav-dropdown-item">
+                <i class="fas fa-leaf"></i> Acupuntura Sistêmica
+              </a>
+       
+              </a>
+            </div>
+          </div>
+          
+          <a href="sobre.html" class="nav-link">Sobre</a>
+          <a href="index.html#espaco" class="nav-link">Espaço</a>
+          <a href="agendamento.html" class="nav-link">Agendamento</a>
+          <a href="https://wa.me/5511976366471?text=Olá!%20Gostaria%20de%20agendar%20uma%20sessão%20de%20Pilates%20no%20Vital%20Kali." target="_blank" rel="noopener noreferrer" class="nav-cta">
+            Agende sua sessão
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="nav-mobile-toggle" id="mobileToggle" aria-label="Menu principal">
+          <svg class="nav-icon" id="menuIcon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+          <svg class="nav-icon nav-icon-hidden" id="closeIcon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="nav-menu-mobile" id="mobileMenu">
+        <a href="index.html" class="nav-link-mobile">Início</a>
+        
+        <!-- Serviços Mobile com Accordion -->
+        <div class="mobile-accordion">
+          <button class="mobile-accordion-toggle">
+            Serviços <i class="fas fa-chevron-down accordion-icon"></i>
+          </button>
+          <div class="mobile-accordion-content">
+            <a href="pilates.html" class="nav-link-mobile">
+              <i class="fas fa-dumbbell"></i> Pilates Terapêutico
+            </a>
+            <a href="yoga.html" class="nav-link-mobile">
+              <i class="fas fa-spa"></i> Yoga Vinyasa Flow
+            </a>
+            <a href="meditacao.html" class="nav-link-mobile">
+              <i class="fas fa-brain"></i> Meditação
+            </a>
+            <a href="massagem.html" class="nav-link-mobile">
+              <i class="fas fa-hands"></i> Massagem Terapêutica
+            </a>
+            <a href="acupuntura.html" class="nav-link-mobile">
+              <i class="fas fa-leaf"></i> Acupuntura Sistêmica
+            </a>
+            <a href="ventosaterapia.html" class="nav-link-mobile">
+              <i class="fas fa-wind"></i> Ventosaterapia
+            </a>
+            <a href="auriculoterapia.html" class="nav-link-mobile">
+              <i class="fas fa-ear"></i> Auriculoterapia
+            </a>
+          </div>
+        </div>
+        
+        <a href="sobre.html" class="nav-link-mobile">Sobre</a>
+        <a href="index.html#espaco" class="nav-link-mobile">Espaço</a>
+        <a href="agendamento.html" class="nav-link-mobile">Agendamento</a>
+        <a href="https://wa.me/5511976366471?text=Olá!%20Gostaria%20de%20agendar%20uma%20sessão%20de%20Pilates%20no%20Vital%20Kali." target="_blank" rel="noopener noreferrer" class="nav-cta-mobile">
+          Agende sua sessão
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="pilates-hero">
+    <div class="pilates-hero-image">
+      <img src="lady.png" 
+           alt="Pessoa praticando Pilates em estúdio sofisticado, controle preciso" 
+           loading="eager">
+      <div class="pilates-hero-overlay"></div>
+    </div>
+    
+    <div class="pilates-hero-content">
+      <div class="pilates-hero-text">
+        <h1 class="pilates-hero-title">Pilates na Vital Kali</h1>
+        <p class="pilates-hero-subtitle">Força, controle e consciência corporal em um ambiente acolhedor e personalizado</p>
+        <a href="https://wa.me/5511976366471?text=Olá!%20Gostaria%20de%20agendar%20uma%20sessão%20de%20Pilates%20na%20Vital%20Kali." 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="pilates-hero-cta">
+          Agende sua sessão
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Atendimentos em Pilates -->
+  <section class="pilates-services-section">
+    <div class="pilates-container">
+      <h2 class="pilates-section-title">Atendimentos em Pilates</h2>
+      
+      <div class="pilates-services-grid">
+        <!-- Pilates Terapêutico -->
+        <div class="pilates-service-item" id="pilates-terapeutico">
+          <div class="pilates-service-image">
+            <img src="pilatesterapeutico.jpg" 
+                 alt="Pilates terapêutico para alívio de dores musculares e articulares" 
+                 loading="lazy">
+          </div>
+          
+          <div class="pilates-service-content">
+            <div class="pilates-service-header">
+              <div class="pilates-service-icon">
+                <i class="fas fa-heartbeat"></i>
+              </div>
+              <h3 class="pilates-service-title">Pilates Terapêutico</h3>
+            </div>
+            
+            <p class="pilates-service-description">
+              Pilates voltado para prevenção, tratamento e alívio de dores musculares e articulares, como dores na coluna, ombros, joelhos e problemas posturais. Na Vital Kali, o foco é o atendimento individualizado, respeitando as limitações de cada corpo, promovendo fortalecimento seguro, mobilidade e qualidade de vida.
+            </p>
+            
+            <ul class="pilates-service-features">
+              <li><i class="fas fa-check-circle"></i> Alívio de dores crônicas</li>
+              <li><i class="fas fa-check-circle"></i> Corrige problemas posturais</li>
+              <li><i class="fas fa-check-circle"></i> Fortalecimento seguro e progressivo</li>
+              <li><i class="fas fa-check-circle"></i> Atendimento individualizado</li>
+            </ul>
+            
+            <a href="https://wa.me/5511976366471?text=Olá!%20Gostaria%20de%20agendar%20uma%20sessão%20de%20Pilates%20Terapêutico%20na%20Vital%20Kali." 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="pilates-service-cta">
+              Agendar sessão
+            </a>
+          </div>
+        </div>
+        
+        <!-- Pilates para Idosos -->
+        <div class="pilates-service-item">
+          <div class="pilates-service-image">
+            <img src="idoso-PILATES.jpg" 
+                 alt="Pilates adaptado para a terceira idade" 
+                 loading="lazy">
+          </div>
+          
+          <div class="pilates-service-content">
+            <div class="pilates-service-header">
+              <div class="pilates-service-icon">
+                <i class="fas fa-user-friends"></i>
+              </div>
+              <h3 class="pilates-service-title">Pilates para Idosos</h3>
+            </div>
+            
+            <p class="pilates-service-description">
+              Pilates adaptado para a terceira idade, com exercícios seguros e eficazes. O foco da Vital Kali é promover autonomia, equilíbrio, prevenção de quedas, fortalecimento muscular e mais confiança nos movimentos do dia a dia.
+            </p>
+            
+            <ul class="pilates-service-features">
+              <li><i class="fas fa-check-circle"></i> Prevenção de quedas</li>
+              <li><i class="fas fa-check-circle"></i> Melhora do equilíbrio</li>
+              <li><i class="fas fa-check-circle"></i> Fortalecimento muscular seguro</li>
+              <li><i class="fas fa-check-circle"></i> Mais autonomia no dia a dia</li>
+            </ul>
+            
+            <a href="https://wa.me/5511976366471?text=Olá!%20Gostaria%20de%20agendar%20uma%20sessão%20de%20Pilates%20para%20Idosos%20na%20Vital%20Kali." 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="pilates-service-cta">
+              Agendar sessão
+            </a>
+          </div>
+        </div>
+        
+        <!-- Pilates para Gestantes -->
+        <div class="pilates-service-item">
+          <div class="pilates-service-image">
+            <img src="pilates-para-gestantes-capa-2.png" 
+                 alt="Pilates específico para gestantes" 
+                 loading="lazy">
+          </div>
+          
+          <div class="pilates-service-content">
+            <div class="pilates-service-header">
+              <div class="pilates-service-icon">
+                <i class="fas fa-female"></i>
+              </div>
+              <h3 class="pilates-service-title">Pilates para Gestantes</h3>
+            </div>
+            
+            <p class="pilates-service-description">
+              Pilates específico para gestantes, respeitando cada fase da gravidez. O foco é aliviar dores lombares, melhorar a postura, fortalecer o assoalho pélvico, trabalhar a respiração e preparar o corpo para o parto, sempre com segurança.
+            </p>
+            
+            <ul class="pilates-service-features">
+              <li><i class="fas fa-check-circle"></i> Alívio de dores lombares</li>
+              <li><i class="fas fa-check-circle"></i> Preparação para o parto</li>
+              <li><i class="fas fa-check-circle"></i> Fortalecimento do assoalho pélvico</li>
+              <li><i class="fas fa-check-circle"></i> Exercícios seguros para cada trimestre</li>
+            </ul>
+            
+            <a href="https://wa.me/5511976366471?text=Olá!%20Gostaria%20de%20agendar%20uma%20sessão%20de%20Pilates%20para%20Gestantes%20na%20Vital%20Kali." 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="pilates-service-cta">
+              Agendar sessão
+            </a>
+          </div>
+        </div>
+        
+        <!-- Pilates Kids -->
+        <div class="pilates-service-item">
+          <div class="pilates-service-image">
+            <img src="exercicios-de-pilates-kids-capa.jpg" 
+                 alt="Pilates adaptado para crianças, de forma lúdica e divertida" 
+                 loading="lazy">
+          </div>
+          
+          <div class="pilates-service-content">
+            <div class="pilates-service-header">
+              <div class="pilates-service-icon">
+                <i class="fas fa-child"></i>
+              </div>
+              <h3 class="pilates-service-title">Pilates Kids</h3>
+            </div>
+            
+            <p class="pilates-service-description">
+              Pilates adaptado para crianças, de forma lúdica e divertida. O foco da Vital Kali é desenvolver coordenação motora, consciência corporal, postura e incentivar hábitos saudáveis desde cedo.
+            </p>
+            
+            <ul class="pilates-service-features">
+              <li><i class="fas fa-check-circle"></i> Desenvolve coordenação motora</li>
+              <li><i class="fas fa-check-circle"></i> Melhora a consciência corporal</li>
+              <li><i class="fas fa-check-circle"></i> Corrige a postura desde cedo</li>
+              <li><i class="fas fa-check-circle"></i> Abordagem lúdica e divertida</li>
+            </ul>
+            
+            <a href="https://wa.me/5511976366471?text=Olá!%20Gostaria%20de%20agendar%20uma%20sessão%20de%20Pilates%20Kids%20na%20Vital%20Kali." 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="pilates-service-cta">
+              Agendar sessão
+            </a>
+          </div>
+        </div>
+        
+        <!-- Pilates Postural -->
+        <div class="pilates-service-item">
+          <div class="pilates-service-image">
+            <img src="Postura-correta.png" 
+                 alt="Pilates focado na correção e conscientização da postura" 
+                 loading="lazy">
+          </div>
+          
+          <div class="pilates-service-content">
+            <div class="pilates-service-header">
+              <div class="pilates-service-icon">
+                <i class="fas fa-spine"></i>
+              </div>
+              <h3 class="pilates-service-title">Pilates Postural</h3>
+            </div>
+            
+            <p class="pilates-service-description">
+              Pilates focado na correção e conscientização da postura. Trabalha alinhamento corporal, fortalecimento do core e redução de tensões causadas por má postura, especialmente para quem passa muito tempo sentado.
+            </p>
+            
+            <ul class="pilates-service-features">
+              <li><i class="fas fa-check-circle"></i> Correção do alinhamento postural</li>
+              <li><i class="fas fa-check-circle"></i> Redução de tensões musculares</li>
+              <li><i class="fas fa-check-circle"></i> Fortalecimento do core</li>
+              <li><i class="fas fa-check-circle"></i> Especial para quem trabalha sentado</li>
+            </ul>
+            
+            <a href="https://wa.me/5511976366471?text=Olá!%20Gostaria%20de%20agendar%20uma%20sessão%20de%20Pilates%20Postural%20na%20Vital%20Kali." 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="pilates-service-cta">
+              Agendar sessão
+            </a>
+          </div>
+        </div>
+        
+        <!-- Pilates Integrativo -->
+        <div class="pilates-service-item">
+          <div class="pilates-service-image">
+            <img src="integrativo.png" 
+                 alt="Pilates integrativo que une corpo, respiração e consciência" 
+                 loading="lazy">
+          </div>
+          
+          <div class="pilates-service-content">
+            <div class="pilates-service-header">
+              <div class="pilates-service-icon">
+                <i class="fas fa-balance-scale"></i>
+              </div>
+              <h3 class="pilates-service-title">Pilates Integrativo</h3>
+            </div>
+            
+            <p class="pilates-service-description">
+              Abordagem completa do Pilates que integra movimento, respiração e consciência corporal. O foco é promover equilíbrio físico e mental, reduzir o estresse e proporcionar uma experiência mais profunda de bem-estar.
+            </p>
+            
+            <ul class="pilates-service-features">
+              <li><i class="fas fa-check-circle"></i> Integração corpo e mente</li>
+              <li><i class="fas fa-check-circle"></i> Redução do estresse</li>
+              <li><i class="fas fa-check-circle"></i> Consciência corporal profunda</li>
+              <li><i class="fas fa-check-circle"></i> Experiência holística de bem-estar</li>
+            </ul>
+            
+            <a href="https://wa.me/5511976366471?text=Olá!%20Gostaria%20de%20agendar%20uma%20sessão%20de%20Pilates%20Integrativo%20na%20Vital%20Kali." 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="pilates-service-cta">
+              Agendar sessão
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção CTA Final -->
+ <!-- Seção CTA Final MODIFICADA - Com DOIS botões conforme solicitado -->
+  <section class="yoga-final-cta">
+    <div class="yoga-final-content">
+      <h2 class="yoga-final-title">Comece sua transformação com o Yoga</h2>
+      <p class="yoga-final-text">
+        Na Vital Kali, o Yoga é mais do que uma prática física - é uma jornada de autoconhecimento, equilíbrio e conexão. Nossos instrutores especializados guiam cada aluno com atenção individualizada, respeitando o ritmo e as necessidades de cada corpo.
+      </p>
+      
+      <div class="yoga-final-buttons">
+        <!-- Botão 1 - WhatsApp -->
+        <a href="https://wa.me/5511976366471?text=Olá!%20Gostaria%20de%20agendar%20minha%20primeira%20prática%20de%20Pilates%20na%20Vital%20Kali." 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="yoga-final-button">
+          <i class="fab fa-whatsapp"></i> Agende sua prática de Pilates
+        </a>
+        
+        <!-- Botão 2 - Instagram -->
+        <a href="https://www.instagram.com/vitalkali_saudeintegrativa/" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="yoga-final-button yoga-final-button-instagram">
+          <i class="fab fa-instagram"></i> Conheça nosso Yoga no Instagram
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer - IDÊNTICO AO SITE PRINCIPAL -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <!-- Logo and Description -->
+        <div class="footer-col">
+          <div class="footer-logo">
+            <img src="d5997227-cf04-447c-ae5d-3111d809608d.png" alt="Logo Vital Kali">
+          </div>
+          <p class="footer-description">
+            Espaço de bem-estar dedicado a promover saúde e equilíbrio através de práticas como Pilates, Yoga e Acupuntura.
+          </p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/vitalkali/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/5511976366471" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61587118406898" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h3 class="footer-title">Links Rápidos</h3>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fas fa-chevron-right"></i> Início</a></li>
+            <li><a href="pilates.html"><i class="fas fa-chevron-right"></i> Pilates</a></li>
+            <li><a href="sobre.html"><i class="fas fa-chevron-right"></i> Sobre Nós</a></li>
+            <li><a href="index.html#espaco"><i class="fas fa-chevron-right"></i> Nosso Espaço</a></li>
+            <li><a href="agendamento.html"><i class="fas fa-chevron-right"></i> Agendamento</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-col">
+          <h3 class="footer-title">Serviços</h3>
+          <ul class="footer-links">
+            <li><a href="pilates.html#pilates-terapeutico"><i class="fas fa-chevron-right"></i> Pilates Terapêutico</a></li>
+            <li><a href="pilates.html"><i class="fas fa-chevron-right"></i> Pilates para Idosos</a></li>
+            <li><a href="pilates.html"><i class="fas fa-chevron-right"></i> Pilates para Gestantes</a></li>
+            <li><a href="pilates.html"><i class="fas fa-chevron-right"></i> Todos os Serviços</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+         <div class="footer-col">
+          <h3 class="footer-title">Contato</h3>
+          <ul class="footer-contact">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>R. José Antônio Fontes, 498 andar-1<br>Vila Tolstoi, São Paulo - SP<br>03255-000</span>
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <span>(11) 97636-6471</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span>vitalkali@outlook.comr</span>
+            </li>
+           <li>
+  <i class="fas fa-clock"></i>
+  <span>Seg-Sex: 7h às 12h e 16h às 21h<br>Sábado: 8h às 12h e 14h às 18h<br>(Acupuntura, Massagem e Auriculoterapia)</span>
+</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+           &copy; 2026 - <a href="https://codelinkbrasil.github.io/CodeLink-Brasil/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGn5XdDqy38XTzzNEcCbAtONPTNEjEtsfCEpHyRY9bvDq74Qrxugkv3rd6ai7k_aem_A3moSNQbJs6YbWv4zJ62EQ">CodeLink_Brasil</a>CodeLink_Brasil. Todos os direitos reservados.
+
+        </p>
+        <div class="footer-legal">
+          <a href="https://codelinkbrasil.github.io/CodeLink-Brasil/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGn5XdDqy38XTzzNEcCbAtONPTNEjEtsfCEpHyRY9bvDq74Qrxugkv3rd6ai7k_aem_A3moSNQbJs6YbWv4zJ62EQ">Política de Privacidade</a>
+          <a href="https://codelinkbrasil.github.io/CodeLink-Brasil/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGn5XdDqy38XTzzNEcCbAtONPTNEjEtsfCEpHyRY9bvDq74Qrxugkv3rd6ai7k_aem_A3moSNQbJs6YbWv4zJ62EQ">Termos de Uso</a>
+        </div>
+      </div>
+    </div>as
+  </footer>
+
+  <script>
+    // Navigation scroll effect
+    const nav = document.getElementById("navigation")
+    const mobileToggle = document.getElementById("mobileToggle")
+    const mobileMenu = document.getElementById("mobileMenu")
+    const mobileLinks = document.querySelectorAll(".nav-link-mobile")
+
+    // Mobile menu toggle
+    mobileToggle.addEventListener("click", () => {
+      mobileToggle.classList.toggle("active")
+      mobileMenu.classList.toggle("active")
+    })
+
+    // Close mobile menu when clicking a link
+    mobileLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        mobileToggle.classList.remove("active")
+        mobileMenu.classList.remove("active")
+      })
+    })
+
+    // Mobile Accordion
+    const mobileAccordionToggle = document.querySelector('.mobile-accordion-toggle');
+    const mobileAccordionContent = document.querySelector('.mobile-accordion-content');
+
+    if (mobileAccordionToggle && mobileAccordionContent) {
+      mobileAccordionToggle.addEventListener('click', () => {
+        mobileAccordionToggle.classList.toggle('active');
+        mobileAccordionContent.classList.toggle('active');
+      });
+    }
+
+    // Scroll reveal animations
+    function checkScroll() {
+      const elements = document.querySelectorAll('.pilates-service-item');
+      
+      elements.forEach(element => {
+        const elementTop = element.getBoundingClientRect().top;
+        const elementVisible = 150;
+        
+        if (elementTop < window.innerHeight - elementVisible) {
+          element.classList.add('animate');
+        }
+      });
+    }
+    
+    // Initial check
+    window.addEventListener('load', checkScroll);
+    // Check on scroll
+    window.addEventListener('scroll', checkScroll);
+    
+    // Smooth scroll for all anchor links with offset
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        
+        // Only handle internal anchor links
+        if (href.startsWith('#') && href !== '#') {
+          e.preventDefault();
+          
+          const targetId = href.substring(1);
+          const targetElement = document.getElementById(targetId);
+          
+          if (targetElement) {
+            // Close mobile menu if open
+            mobileToggle.classList.remove('active');
+            mobileMenu.classList.remove('active');
+            
+            // Close mobile accordion
+            if (mobileAccordionToggle && mobileAccordionContent) {
+              mobileAccordionToggle.classList.remove('active');
+              mobileAccordionContent.classList.remove('active');
+            }
+            
+            // Smooth scroll to target with offset for fixed header
+            const headerOffset = 100;
+            const elementPosition = targetElement.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+            
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: 'smooth'
+            });
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>

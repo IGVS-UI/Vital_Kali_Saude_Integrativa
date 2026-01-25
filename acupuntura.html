@@ -1,0 +1,2015 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Acupuntura na Vital Kali - Acupuntura Sistêmica, Auriculoterapia, Moxabustão e Tratamentos Integrativos">
+  <meta name="keywords" content="acupuntura, acupuntura sistêmica, auriculoterapia, moxabustão, ventosaterapia, medicina chinesa, vital kali, são paulo">
+  <meta property="og:title" content="Acupuntura na Vital Kali - Wellness Studio">
+  <meta property="og:description" content="Acupuntura Sistêmica, Auriculoterapia, Moxabustão e tratamentos integrativos para equilíbrio físico e emocional">
+  <meta property="og:url" content="https://vitalkali.com.br/acupuntura.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Acupuntura na Vital Kali - Wellness Studio</title>
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<style>
+  /* Reset and Base Styles - Mantendo identidade visual */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Vital Kali brand colors - Mesmas cores do site principal */
+  --background: #FBF9F3;       /* bege claro da flor */
+  --foreground: #4F5F58;       /* verde escuro da logo */
+
+  --primary: #F28C5A;          /* laranja Vital Kali */
+  --primary-hover: #E07B49;    /* laranja mais escuro */
+
+  --secondary: #8FA89A;        /* verde folha */
+  --muted: #F2EEE6;            /* bege suave */
+
+  --text-dark: #4F5F58;        /* texto principal */
+  --text-light: #7A8C84;       /* texto secundário */
+
+  --white: #FFFFFF;
+
+  --whatsapp: #25D366;
+  --whatsapp-hover: #128C7E;
+   --instagram: #E4405F;        /* Instagram pink */
+  --instagram-hover: #C13584;  /* Instagram pink hover */
+
+  --accent-blue: #6F857A;      /* verde acinzentado */
+  --accent-teal: #8FA89A;      /* verde Vital Kali */
+  --accent-earth: #B6A58F;     /* tom terroso da moldura */
+
+  /* Fonts */
+  --font-sans: "Inter", "system-ui", sans-serif;
+  --font-serif: "Cormorant Garamond", "Georgia", serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--background);
+  color: var(--foreground);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Ensure images are responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Navigation Styles - IDÊNTICO AO SITE PRINCIPAL */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  transition: all 0.3s ease;
+  background-color: rgba(249, 247, 243, 0.9);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(44, 62, 62, 0.1);
+  padding: 1rem 0;
+}
+
+.nav-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo img {
+  width: 140px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .nav-logo img {
+    width: 120px;
+  }
+}
+
+.nav-menu-desktop {
+  display: none;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .nav-menu-desktop {
+    display: flex;
+  }
+}
+
+.nav-link {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  color: var(--text-dark);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.nav-link:hover {
+  color: var(--primary);
+}
+
+.nav-cta {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  background-color: var(--primary);
+  color: var(--white);
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-block;
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(232, 137, 82, 0.2);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.nav-cta:hover {
+  background-color: var(--primary-hover);
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(232, 137, 82, 0.3);
+}
+
+.nav-mobile-toggle {
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  color: var(--text-dark);
+  transition: color 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .nav-mobile-toggle {
+    display: none;
+  }
+}
+
+.nav-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.nav-icon-hidden {
+  display: none;
+}
+
+.nav-mobile-toggle.active .nav-icon:first-child {
+  display: none;
+}
+
+.nav-mobile-toggle.active .nav-icon-hidden {
+  display: block;
+}
+
+.nav-menu-mobile {
+  display: none;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.nav-menu-mobile.active {
+  display: flex;
+  background-color: var(--white);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .nav-menu-mobile {
+    display: none !important;
+  }
+}
+
+.nav-link-mobile {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  color: var(--text-dark);
+  text-decoration: none;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
+
+.nav-link-mobile:hover {
+  color: var(--primary);
+}
+
+.nav-cta-mobile {
+  width: 100%;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  background-color: var(--primary);
+  color: var(--white);
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-block;
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(232, 137, 82, 0.2);
+  font-weight: 600;
+}
+
+.nav-cta-mobile:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(232, 137, 82, 0.3);
+}
+
+/* Dropdown Styles */
+.nav-dropdown {
+  position: relative;
+}
+
+.nav-dropdown-toggle {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  color: var(--text-dark);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.nav-dropdown-toggle:hover {
+  color: var(--primary);
+}
+
+.dropdown-icon {
+  font-size: 0.75rem;
+  transition: transform 0.3s ease;
+}
+
+.nav-dropdown:hover .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+.nav-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 280px;
+  background-color: var(--white);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(44, 62, 62, 0.15);
+  padding: 1rem 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 100;
+  border: 1px solid rgba(44, 62, 62, 0.1);
+}
+
+.nav-dropdown:hover .nav-dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.nav-dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: 20px;
+  width: 12px;
+  height: 12px;
+  background-color: var(--white);
+  transform: rotate(45deg);
+  border-left: 1px solid rgba(44, 62, 62, 0.1);
+  border-top: 1px solid rgba(44, 62, 62, 0.1);
+}
+
+.nav-dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  color: var(--text-dark);
+  text-decoration: none;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+  border-left: 3px solid transparent;
+}
+
+.nav-dropdown-item:hover {
+  background-color: rgba(242, 140, 90, 0.05);
+  color: var(--primary);
+  border-left: 3px solid var(--primary);
+  padding-left: 1.75rem;
+}
+
+.nav-dropdown-item i {
+  width: 16px;
+  text-align: center;
+  color: var(--accent-teal);
+}
+
+.nav-dropdown-item:hover i {
+  color: var(--primary);
+}
+
+/* Mobile Accordion */
+.mobile-accordion {
+  border-bottom: 1px solid rgba(44, 62, 62, 0.1);
+}
+
+.mobile-accordion-toggle {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  padding: 0.75rem 0;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  color: var(--text-dark);
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.mobile-accordion-toggle:hover {
+  color: var(--primary);
+}
+
+.accordion-icon {
+  font-size: 0.75rem;
+  transition: transform 0.3s ease;
+}
+
+.mobile-accordion-toggle.active .accordion-icon {
+  transform: rotate(180deg);
+}
+
+.mobile-accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding-left: 1rem;
+}
+
+.mobile-accordion-content.active {
+  max-height: 500px;
+}
+
+.mobile-accordion-content .nav-link-mobile {
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.mobile-accordion-content .nav-link-mobile i {
+  width: 16px;
+  text-align: center;
+  color: var(--accent-teal);
+}
+
+/* Hero Section para página Acupuntura */
+.acupuntura-hero {
+  position: relative;
+  height: 110vh;
+  min-height: 700px;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .acupuntura-hero {
+    height: 70vh;
+    min-height: 500px;
+  }
+}
+
+.acupuntura-hero-image {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.acupuntura-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.acupuntura-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(44, 62, 80, 0.85) 0%,
+    rgba(74, 124, 124, 0.75) 50%,
+    rgba(184, 163, 141, 0.65) 100%
+  );
+  mix-blend-mode: multiply;
+  z-index: 2;
+}
+
+.acupuntura-hero-content {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.acupuntura-hero-text {
+  max-width: 700px;
+}
+
+.acupuntura-hero-title {
+  font-family: var(--font-serif);
+  font-size: 4.5rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .acupuntura-hero-title {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .acupuntura-hero-title {
+    font-size: 2.8rem;
+  }
+}
+
+.acupuntura-hero-subtitle {
+  font-family: var(--font-sans);
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 3rem;
+  max-width: 600px;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .acupuntura-hero-subtitle {
+    font-size: 1.2rem;
+  }
+}
+
+.acupuntura-hero-cta {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  padding: 1.1rem 2.2rem;
+  border-radius: 9999px;
+  background-color: var(--primary);
+  color: var(--white);
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(0);
+  font-weight: 600;
+  min-width: 190px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 2px solid var(--primary);
+  box-shadow: 0 4px 12px rgba(232, 137, 82, 0.3);
+}
+
+.acupuntura-hero-cta:hover {
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(232, 137, 82, 0.4);
+}
+
+/* NOVA SEÇÃO INSTITUCIONAL - Acupuntura (Layout Duas Colunas) - MODIFICADO: CONTEÚDO ESQUERDA, IMAGEM DIREITA */
+.acupuntura-institucional {
+  background-color: var(--background);
+  padding: 8rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .acupuntura-institucional {
+    padding: 6rem 0;
+  }
+}
+
+.acupuntura-institucional-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.acupuntura-institucional-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .acupuntura-institucional-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+  }
+}
+
+/* Card da imagem (DIREITA) - MODIFICADO */
+.acupuntura-imagem-card {
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(44, 62, 62, 0.2);
+  height: 650px;
+  position: relative;
+  transform: translateY(0);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  order: 2; /* Coloca a imagem na direita */
+}
+
+.acupuntura-imagem-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 40px 80px rgba(44, 62, 62, 0.25);
+}
+
+.acupuntura-imagem-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+
+.acupuntura-imagem-card:hover img {
+  transform: scale(1.05);
+}
+
+.overlay-suave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(251, 249, 243, 0.1) 0%,
+    rgba(251, 249, 243, 0.05) 100%
+  );
+  pointer-events: none;
+}
+
+/* Conteúdo textual (ESQUERDA) - MODIFICADO */
+.acupuntura-conteudo {
+  padding: 0 1rem;
+  order: 1; /* Coloca o conteúdo na esquerda */
+}
+
+.acupuntura-titulo {
+  font-family: var(--font-serif);
+  font-size: 4rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.03em;
+  line-height: 1.1;
+  position: relative;
+}
+
+.acupuntura-titulo::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 100px;
+  height: 4px;
+  background-color: var(--primary);
+  border-radius: 2px;
+}
+
+.acupuntura-texto-principal {
+  font-family: var(--font-sans);
+  font-size: 1.3rem;
+  line-height: 1.8;
+  color: var(--text-light);
+  margin-bottom: 2.5rem;
+}
+
+.acupuntura-destaque {
+  font-family: var(--font-sans);
+  font-size: 1.25rem;
+  line-height: 1.7;
+  color: var(--text-dark);
+  margin-bottom: 3rem;
+  padding-left: 2rem;
+  border-left: 3px solid var(--primary);
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Bloco de detalhe diagnóstico */
+.diagnostico-container {
+  background-color: var(--muted);
+  border-radius: 20px;
+  padding: 3rem;
+  margin-top: 3rem;
+  position: relative;
+  border: 1px solid rgba(143, 168, 154, 0.1);
+  overflow: hidden;
+}
+
+.diagnostico-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: linear-gradient(90deg, var(--primary), var(--accent-teal));
+  border-radius: 20px 20px 0 0;
+}
+
+.diagnostico-titulo {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.diagnostico-titulo i {
+  color: var(--primary);
+  font-size: 1.5rem;
+}
+
+.diagnostico-texto {
+  font-family: var(--font-sans);
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: var(--text-light);
+  margin-bottom: 2rem;
+}
+
+.tecnicas-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.tecnica-item {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: var(--text-dark);
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(143, 168, 154, 0.2);
+  box-shadow: 0 4px 12px rgba(44, 62, 62, 0.08);
+}
+
+.tecnica-item:hover {
+  background-color: var(--primary);
+  color: var(--white);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(242, 140, 90, 0.3);
+  border-color: var(--primary);
+}
+
+/* Elementos de design sutis */
+.elemento-decorativo {
+  position: absolute;
+  z-index: -1;
+  opacity: 0.05;
+  pointer-events: none;
+}
+
+.elemento-1 {
+  top: 10%;
+  right: 5%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: var(--accent-teal);
+}
+
+.elemento-2 {
+  bottom: 20%;
+  left: 3%;
+  width: 150px;
+  height: 150px;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  background-color: var(--primary);
+}
+
+/* Seção Modalidades Terapêuticas - Agora com imagem e texto alternados */
+.modalidades-detalhadas-section {
+  background-color: var(--muted);
+  padding: 8rem 0;
+}
+
+.modalidades-detalhadas-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.modalidades-detalhadas-title {
+  font-family: var(--font-serif);
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  text-align: center;
+  margin-bottom: 5rem;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 768px) {
+  .modalidades-detalhadas-title {
+    font-size: 2.8rem;
+    margin-bottom: 3rem;
+  }
+}
+
+/* Grid de modalidades detalhadas */
+.modalidades-detalhadas-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5rem;
+}
+
+/* Item de modalidade detalhada */
+.modalidade-detalhada-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modalidade-detalhada-item.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (min-width: 992px) {
+  .modalidade-detalhada-item {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+  
+  .modalidade-detalhada-item:nth-child(even) .modalidade-detalhada-image {
+    order: 2;
+  }
+  
+  .modalidade-detalhada-item:nth-child(even) .modalidade-detalhada-content {
+    order: 1;
+  }
+}
+
+.modalidade-detalhada-image {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px rgba(44, 62, 62, 0.2);
+  height: 450px;
+}
+
+.modalidade-detalhada-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.modalidade-detalhada-item:hover .modalidade-detalhada-image img {
+  transform: scale(1.05);
+}
+
+.modalidade-detalhada-content {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.modalidade-detalhada-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.modalidade-detalhada-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(242, 140, 90, 0.15), rgba(232, 137, 82, 0.1));
+  color: var(--primary);
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.modalidade-detalhada-title {
+  font-family: var(--font-serif);
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+  .modalidade-detalhada-title {
+    font-size: 1.8rem;
+  }
+}
+
+.modalidade-detalhada-description {
+  font-family: var(--font-sans);
+  color: var(--text-light);
+  line-height: 1.7;
+  font-size: 1.15rem;
+  margin-bottom: 2rem;
+}
+
+.modalidade-detalhada-benefits {
+  list-style: none;
+  margin-bottom: 2rem;
+  padding: 0;
+}
+
+.modalidade-detalhada-benefits li {
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
+  color: var(--text-light);
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+
+.modalidade-detalhada-benefits i {
+  color: var(--accent-teal);
+  font-size: 1rem;
+  margin-top: 0.25rem;
+  flex-shrink: 0;
+}
+
+.modalidade-detalhada-cta {
+  align-self: flex-start;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  padding: 1rem 2rem;
+  border-radius: 9999px;
+  background-color: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.modalidade-detalhada-cta:hover {
+  background-color: var(--primary);
+  color: var(--white);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(242, 140, 90, 0.3);
+}
+
+/* Seção CTA final */
+.acupuntura-final-cta {
+  background-color: var(--background);
+  padding: 8rem 0;
+  text-align: center;
+}
+
+.acupuntura-final-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.acupuntura-final-title {
+  font-family: var(--font-serif);
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 2rem;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 768px) {
+  .acupuntura-final-title {
+    font-size: 2.8rem;
+  }
+}
+
+.acupuntura-final-text {
+  font-family: var(--font-sans);
+  font-size: 1.3rem;
+  color: var(--text-light);
+  margin-bottom: 3rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .acupuntura-final-text {
+    font-size: 1.15rem;
+  }
+}
+
+/* Container para os botões CTA */
+.acupuntura-final-buttons {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  .acupuntura-final-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+}
+
+.acupuntura-final-button {
+ font-family: var(--font-sans);
+  font-size: 1.1rem;
+  padding: 1.3rem 2.8rem;
+  border-radius: 9999px;
+  background-color: var(--whatsapp);
+  color: var(--white);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(0);
+  font-weight: 600;
+  border: 2px solid var(--whatsapp);
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+  min-width: 280px;
+  justify-content: center;
+}
+
+.acupuntura-final-button:hover {
+background-color: var(--whatsapp-hover);
+  border-color: var(--whatsapp-hover);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(37, 211, 102, 0.4);
+}
+
+.acupuntura-final-button-instagram {
+ background-color: var(--instagram);
+  color: var(--white); 
+  border: 2px solid var(--instagram);
+  box-shadow: var(--instagram);
+}
+
+.acupuntura-final-button-instagram:hover {
+  background-color: var(--instagram-hover);
+  color: var(--white);
+  border: var(--instagram-hover);
+  box-shadow: var(--instagram-hover);
+}
+
+/* Footer Styles - IDÊNTICO AO SITE PRINCIPAL */
+.site-footer {
+  background-color: var(--accent-blue);
+  color: var(--white);
+  padding: 6rem 0 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+  .footer-content {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
+  }
+}
+
+.footer-logo {
+  max-width: 200px;
+  margin-bottom: 1.5rem;
+}
+
+.footer-logo img {
+  width: 100%;
+  height: auto;
+  
+}
+
+.footer-description {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.footer-title {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.footer-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 3px;
+  background-color: var(--primary);
+}
+
+.footer-links {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 1rem;
+}
+
+.footer-links a {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.footer-links a:hover {
+  color: var(--primary);
+  transform: translateX(5px);
+}
+
+.footer-contact {
+  list-style: none;
+}
+
+.footer-contact li {
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.footer-contact i {
+  color: var(--primary);
+  font-size: 1.2rem;
+  margin-top: 0.25rem;
+  flex-shrink: 0;
+}
+
+.footer-contact span {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.5;
+}
+
+.footer-social {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+}
+
+.footer-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.12);
+  color: var(--white);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 1.3rem;
+}
+
+.footer-social a:hover {
+  background-color: var(--primary);
+  transform: translateY(-5px);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.footer-copyright {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+}
+
+.footer-legal {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-legal a {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-legal a:hover {
+  color: var(--primary);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scroll reveal animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* WhatsApp Floating Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 6rem;
+  right: 2rem;
+  background-color: var(--whatsapp);
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+  z-index: 1000;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 1.8rem;
+  opacity: 0;
+  transform: translateY(20px) scale(0.8);
+  animation: floatIn 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards 2s;
+}
+
+@keyframes floatIn {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.whatsapp-float:hover {
+  background-color: var(--whatsapp-hover);
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+}
+
+.whatsapp-float::after {
+  content: "Agendar";
+  position: absolute;
+  right: 70px;
+  background-color: var(--primary);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  font-family: var(--font-sans);
+  font-weight: 600;
+}
+
+.whatsapp-float:hover::after {
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .whatsapp-float {
+    width: 70px;
+    height: 70px;
+    font-size: 2rem;
+  }
+}
+
+/* Responsividade para a seção institucional */
+@media (max-width: 768px) {
+  .acupuntura-institucional {
+    padding: 4rem 1.5rem;
+  }
+  
+  .acupuntura-titulo {
+    font-size: 3rem;
+  }
+  
+  .acupuntura-texto-principal {
+    font-size: 1.15rem;
+  }
+  
+  .acupuntura-imagem-card {
+    height: 450px;
+    order: 1; /* No mobile, imagem vem primeiro */
+  }
+  
+  .acupuntura-conteudo {
+    order: 2; /* No mobile, conteúdo vem depois */
+  }
+  
+  .diagnostico-container {
+    padding: 2rem;
+  }
+  
+  .acupuntura-destaque {
+    font-size: 1.15rem;
+    padding-left: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .acupuntura-titulo {
+    font-size: 2.5rem;
+  }
+  
+  .tecnicas-lista {
+    justify-content: center;
+  }
+  
+  .tecnica-item {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
+</style>
+<body>
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/5511976366471?text=Olá!%20Gostaria%20de%20agendar%20uma%20sessão%20de%20Acupuntura%20na%20Vital%20Kali." 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     class="whatsapp-float"
+     aria-label="Agendar Acupuntura via WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Navigation - IDÊNTICO AO SITE PRINCIPAL -->
+  <nav id="navigation" class="nav">
+    <div class="nav-container">
+      <div class="nav-content">
+        <!-- Logo -->
+        <a href="index.html" class="nav-logo">
+          <img src="d5997227-cf04-447c-ae5d-3111d809608d.png" 
+               alt="Logo Vital Kali - Wellness Studio" 
+               width="150" 
+               height="150"
+               loading="eager">
+        </a>
+
+        <!-- Desktop Menu -->
+        <div class="nav-menu-desktop">
+          <a href="index.html" class="nav-link">Início</a>
+          
+          <!-- Serviços com Dropdown -->
+          <div class="nav-dropdown">
+            <button class="nav-link nav-dropdown-toggle">
+              Serviços <i class="fas fa-chevron-down dropdown-icon"></i>
+            </button>
+            <div class="nav-dropdown-menu">
+              <a href="pilates.html" class="nav-dropdown-item">
+                <i class="fas fa-dumbbell"></i> Pilates Terapêutico
+              </a>
+              <a href="yoga.html" class="nav-dropdown-item">
+                <i class="fas fa-spa"></i> Yoga Vinyasa Flow
+              </a>
+              <a href="yoga.html" class="nav-dropdown-item">
+                <i class="fas fa-brain"></i> Meditação
+              </a>
+              <a href="massagem.html" class="nav-dropdown-item">
+                <i class="fas fa-hands"></i> Massagem Terapêutica
+              </a>
+              <a href="acupuntura.html" class="nav-dropdown-item">
+                <i class="fas fa-leaf"></i> Acupuntura Sistêmica
+              </a>
+           
+            </div>
+          </div>
+          
+          <a href="sobre.html" class="nav-link">Sobre</a>
+          <a href="index.html#espaco" class="nav-link">Espaço</a>
+          <a href="agendamento.html" class="nav-link">Agendamento</a>
+          <a href="https://wa.me/5511976366471?text=Olá!%20Gostaria%20de%20agendar%20uma%20sessão%20de%20Acupuntura%20no%20Vital%20Kali." target="_blank" rel="noopener noreferrer" class="nav-cta">
+            Agende sua sessão
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="nav-mobile-toggle" id="mobileToggle" aria-label="Menu principal">
+          <svg class="nav-icon" id="menuIcon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+          <svg class="nav-icon nav-icon-hidden" id="closeIcon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="nav-menu-mobile" id="mobileMenu">
+        <a href="index.html" class="nav-link-mobile">Início</a>
+        
+        <!-- Serviços Mobile com Accordion -->
+        <div class="mobile-accordion">
+          <button class="mobile-accordion-toggle">
+            Serviços <i class="fas fa-chevron-down accordion-icon"></i>
+          </button>
+          <div class="mobile-accordion-content">
+            <a href="pilates.html" class="nav-link-mobile">
+              <i class="fas fa-dumbbell"></i> Pilates Terapêutico
+            </a>
+            <a href="yoga.html" class="nav-link-mobile">
+              <i class="fas fa-spa"></i> Yoga Vinyasa Flow
+            </a>
+            <a href="meditacao.html" class="nav-link-mobile">
+              <i class="fas fa-brain"></i> Meditação
+            </a>
+            <a href="massagem.html" class="nav-link-mobile">
+              <i class="fas fa-hands"></i> Massagem Terapêutica
+            </a>
+            <a href="acupuntura.html" class="nav-link-mobile">
+              <i class="fas fa-leaf"></i> Acupuntura Sistêmica
+            </a>
+            <a href="ventosaterapia.html" class="nav-link-mobile">
+              <i class="fas fa-wind"></i> Ventosaterapia
+            </a>
+            <a href="auriculoterapia.html" class="nav-link-mobile">
+              <i class="fas fa-ear"></i> Auriculoterapia
+            </a>
+          </div>
+        </div>
+        
+        <a href="sobre.html" class="nav-link-mobile">Sobre</a>
+        <a href="index.html#espaco" class="nav-link-mobile">Espaço</a>
+        <a href="agendamento.html" class="nav-link-mobile">Agendamento</a>
+        <a href="https://wa.me/5511976366471?text=Olá!%20Gostaria%20de%20agendar%20uma%20sessão%20de%20Acupuntura%20no%20Vital%20Kali." target="_blank" rel="noopener noreferrer" class="nav-cta-mobile">
+          Agende sua sessão
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="acupuntura-hero">
+    <div class="acupuntura-hero-image">
+      <img src="acupuntura.png" 
+           alt="Acupuntura terapêutica em ambiente tranquilo e harmonioso" 
+           loading="eager">
+      <div class="acupuntura-hero-overlay"></div>
+    </div>
+    
+    <div class="acupuntura-hero-content">
+      <div class="acupuntura-hero-text">
+        <h1 class="acupuntura-hero-title">Acupuntura na Vital Kali</h1>
+        <p class="acupuntura-hero-subtitle">Equilíbrio energético, alívio de dores e bem-estar integral através da sabedoria milenar chinesa</p>
+        <a href="https://wa.me/5511976366471?text=Olá!%20Gostaria%20de%20agendar%20uma%20sessão%20de%20Acupuntura%20na%20Vital%20Kali." 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="acupuntura-hero-cta">
+          Agende sua sessão
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOVA SEÇÃO INSTITUCIONAL - Layout Duas Colunas MODIFICADO: CONTEÚDO ESQUERDA, IMAGEM DIREITA -->
+  <section class="acupuntura-institucional">
+    
+    <!-- Elementos decorativos sutis -->
+    <div class="elemento-decorativo elemento-1"></div>
+    <div class="elemento-decorativo elemento-2"></div>
+    
+    <div class="acupuntura-institucional-container">
+      <div class="acupuntura-institucional-grid">
+        
+        <!-- Coluna do Conteúdo (ESQUERDA) - MODIFICADO: Agora vem primeiro -->
+        <div class="acupuntura-conteudo">
+          
+          <h2 class="acupuntura-titulo">Acupuntura</h2>
+          
+          <p class="acupuntura-texto-principal">
+            Ao estimular o movimento sutil das energias do corpo, a acupuntura auxilia na liberação de bloqueios, no alívio de dores físicas e emocionais e na restauração do equilíbrio natural do organismo.
+          </p>
+          
+          <p class="acupuntura-destaque">
+            Na Vital Kali, a acupuntura é vivenciada como um cuidado profundo e individualizado, respeitando a história, o momento e as necessidades de cada pessoa.
+          </p>
+          
+          <!-- Bloco de Diagnóstico -->
+          <div class="diagnostico-container">
+            
+            <h3 class="diagnostico-titulo">
+              <i class="fas fa-clipboard-check"></i> Abordagem Integral
+            </h3>
+            
+            <p class="diagnostico-texto">
+              O atendimento inicia com uma avaliação diagnóstica baseada na Medicina Tradicional Chinesa. A partir disso, os tratamentos são personalizados e podem incluir técnicas com ou sem agulhas:
+            </p>
+            
+            <div class="tecnicas-lista">
+              <span class="tecnica-item">Acupuntura Sistêmica</span>
+              <span class="tecnica-item">Laserterapia</span>
+              <span class="tecnica-item">Stiper</span>
+              <span class="tecnica-item">Magnetos</span>
+              <span class="tecnica-item">Ventosaterapia</span>
+              <span class="tecnica-item">Moxabustão</span>
+              <span class="tecnica-item">Auriculoterapia</span>
+            </div>
+            
+            <p class="diagnostico-texto" style="margin-top: 1.5rem; font-style: italic;">
+              Cada técnica é selecionada conforme a necessidade específica de cada paciente, sempre visando o reequilíbrio energético e o bem-estar integral.
+            </p>
+            
+          </div>
+          <!-- Fim do Bloco de Diagnóstico -->
+          
+        </div>
+        <!-- Fim da Coluna do Conteúdo -->
+        
+        <!-- Coluna da Imagem (DIREITA) - MODIFICADO: Agora vem depois -->
+        <div class="acupuntura-imagem-card">
+          <img src="Acupuntura-scaled-1.jpg" 
+               alt="Sessão de acupuntura em ambiente tranquilo e iluminado, com agulhas finas aplicadas com precisão">
+          <div class="overlay-suave"></div>
+        </div>
+        
+      </div>
+      <!-- Fim do Grid -->
+      
+    </div>
+    <!-- Fim do Container -->
+    
+  </section>
+  <!-- Fim da Seção Institucional -->
+
+  <!-- SEÇÃO MODALIDADES DETALHADAS - Agora com imagem e texto alternados -->
+  <section class="modalidades-detalhadas-section">
+    <div class="modalidades-detalhadas-container">
+      <h2 class="modalidades-detalhadas-title">Modalidades Terapêuticas</h2>
+      
+      <div class="modalidades-detalhadas-grid">
+        <!-- Acupuntura Sistêmica -->
+        <div class="modalidade-detalhada-item animate">
+          <div class="modalidade-detalhada-image">
+            <img src="sistemica.png" 
+                 alt="Acupuntura Sistêmica com agulhas finíssimas" 
+                 loading="lazy">
+          </div>
+          
+          <div class="modalidade-detalhada-content">
+            <div class="modalidade-detalhada-header">
+              <div class="modalidade-detalhada-icon">
+                <i class="fas fa-leaf"></i>
+              </div>
+              <h3 class="modalidade-detalhada-title">Acupuntura Sistêmica</h3>
+            </div>
+            
+            <p class="modalidade-detalhada-description">
+              Utilização de agulhas finíssimas e esterilizadas em pontos específicos dos meridianos energéticos para equilibrar o fluxo do Qi (energia vital), tratar desequilíbrios e promover saúde integral.
+            </p>
+            
+            <ul class="modalidade-detalhada-benefits">
+              <li><i class="fas fa-check-circle"></i> Alívio de dores crônicas e agudas</li>
+              <li><i class="fas fa-check-circle"></i> Reequilíbrio do sistema energético</li>
+              <li><i class="fas fa-check-circle"></i> Tratamento de desordens emocionais</li>
+              <li><i class="fas fa-check-circle"></i> Fortalecimento do sistema imunológico</li>
+            </ul>
+            
+            <a href="https://wa.me/5511976366471?text=Olá!%20Gostaria%20de%20agendar%20uma%20sessão%20de%20Acupuntura%20Sistêmica%20na%20Vital%20Kali." 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="modalidade-detalhada-cta">
+              Agendar sessão
+            </a>
+          </div>
+        </div>
+        
+        <!-- Auriculoterapia -->
+        <div class="modalidade-detalhada-item animate">
+          <div class="modalidade-detalhada-image">
+            <img src="download.png" 
+                 alt="Auriculoterapia com pontos reflexos na orelha" 
+                 loading="lazy">
+          </div>
+          
+          <div class="modalidade-detalhada-content">
+            <div class="modalidade-detalhada-header">
+              <div class="modalidade-detalhada-icon">
+               <i class="fas fa-hand-holding-heart"></i>
+              </div>
+              <h3 class="modalidade-detalhada-title">Auriculoterapia</h3>
+            </div>
+            
+            <p class="modalidade-detalhada-description">
+              Tratamento através da estimulação de pontos reflexos na orelha, que correspondem a diferentes partes do corpo. Utilizamos sementes, agulhas ou esferas magnéticas para equilibrar o organismo.
+            </p>
+            
+            <ul class="modalidade-detalhada-benefits">
+              <li><i class="fas fa-check-circle"></i> Controle da ansiedade e estresse</li>
+              <li><i class="fas fa-check-circle"></i> Auxílio no tratamento de vícios</li>
+              <li><i class="fas fa-check-circle"></i> Regulação do apetite e peso</li>
+              <li><i class="fas fa-check-circle"></i> Alívio de dores localizadas</li>
+            </ul>
+            
+            <a href="https://wa.me/5511976366471?text=Olá!%20Gostaria%20de%20agendar%20uma%20sessão%20de%20Auriculoterapia%20na%20Vital%20Kali." 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="modalidade-detalhada-cta">
+              Agendar sessão
+            </a>
+          </div>
+        </div>
+        
+        <!-- Moxabustão -->
+        <div class="modalidade-detalhada-item animate">
+          <div class="modalidade-detalhada-image">
+            <img src="moxobustao.jpg" 
+                 alt="Moxabustão com aquecimento terapêutico" 
+                 loading="lazy">
+          </div>
+          
+          <div class="modalidade-detalhada-content">
+            <div class="modalidade-detalhada-header">
+              <div class="modalidade-detalhada-icon">
+                <i class="fas fa-fire"></i>
+              </div>
+              <h3 class="modalidade-detalhada-title">Moxabustão</h3>
+            </div>
+            
+            <p class="modalidade-detalhada-description">
+              Aplicação de calor através da erva Artemisia vulgaris (moxa) sobre pontos de acupuntura. Esta técnica milenar aquece e fortalece a energia vital, sendo especialmente indicada para condições de frio e umidade.
+            </p>
+            
+            <ul class="modalidade-detalhada-benefits">
+              <li><i class="fas fa-check-circle"></i> Alívio de dores articulares e musculares</li>
+              <li><i class="fas fa-check-circle"></i> Fortalecimento do sistema imunológico</li>
+              <li><i class="fas fa-check-circle"></i> Melhora da circulação sanguínea</li>
+              <li><i class="fas fa-check-circle"></i> Tratamento de problemas ginecológicos</li>
+            </ul>
+            
+            <a href="https://wa.me/5511976366471?text=Olá!%20Gostaria%20de%20agendar%20uma%20sessão%20de%20Moxabustão%20na%20Vital%20Kali." 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="modalidade-detalhada-cta">
+              Agendar sessão
+            </a>
+          </div>
+        </div>
+        
+        <!-- Ventosaterapia -->
+        <div class="modalidade-detalhada-item animate">
+          <div class="modalidade-detalhada-image">
+            <img src="ventosaterapia-soufisio-zenfisio.jpg" 
+                 alt="Ventosaterapia com copos de vidro" 
+                 loading="lazy">
+          </div>
+          
+          <div class="modalidade-detalhada-content">
+            <div class="modalidade-detalhada-header">
+              <div class="modalidade-detalhada-icon">
+                <i class="fas fa-wind"></i>
+              </div>
+              <h3 class="modalidade-detalhada-title">Ventosaterapia</h3>
+            </div>
+            
+            <p class="modalidade-detalhada-description">
+              Técnica que utiliza ventosas (de vidro, silicone ou plástico) para criar vácuo na pele, promovendo aumento da circulação sanguínea, liberação de tensões musculares e eliminação de toxinas.
+            </p>
+            
+            <ul class="modalidade-detalhada-benefits">
+              <li><i class="fas fa-check-circle"></i> Alívio imediato de tensões musculares</li>
+              <li><i class="fas fa-check-circle"></i> Melhora da circulação e oxigenação</li>
+              <li><i class="fas fa-check-circle"></i> Redução de celulite e gordura localizada</li>
+              <li><i class="fas fa-check-circle"></i> Tratamento de problemas respiratórios</li>
+            </ul>
+            
+            <a href="https://wa.me/5511976366471?text=Olá!%20Gostaria%20de%20agendar%20uma%20sessão%20de%20Ventosaterapia%20na%20Vital%20Kali." 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="modalidade-detalhada-cta">
+              Agendar sessão
+            </a>
+          </div>
+        </div>
+        
+        <!-- Acupuntura sem Agulhas -->
+        <div class="modalidade-detalhada-item animate">
+          <div class="modalidade-detalhada-image">
+            <img src="chat.png"
+                 alt="Acupuntura sem agulhas com laser terapêutico" 
+                 loading="lazy">
+          </div>
+          
+          <div class="modalidade-detalhada-content">
+            <div class="modalidade-detalhada-header">
+              <div class="modalidade-detalhada-icon">
+                <i class="fas fa-hand-holding-heart"></i>
+              </div>
+              <h3 class="modalidade-detalhada-title">Acupuntura sem Agulhas</h3>
+            </div>
+            
+            <p class="modalidade-detalhada-description">
+              Técnicas modernas que estimulam os pontos de acupuntura sem o uso de agulhas. Inclui laserterapia, stiper (cristais) e magnetoterapia, ideais para crianças, idosos e pessoas com receio de agulhas.
+            </p>
+            
+            <ul class="modalidade-detalhada-benefits">
+              <li><i class="fas fa-check-circle"></i> Totalmente indolor e não-invasivo</li>
+              <li><i class="fas fa-check-circle"></i> Ideal para pacientes sensíveis</li>
+              <li><i class="fas fa-check-circle"></i> Eficaz para tratamento de crianças</li>
+              <li><i class="fas fa-check-circle"></i> Resultados rápidos e duradouros</li>
+            </ul>
+            
+            <a href="https://wa.me/5511976366471?text=Olá!%20Gostaria%20de%20agendar%20uma%20sessão%20de%20Acupuntura%20sem%20Agulhas%20na%20Vital%20Kali." 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="modalidade-detalhada-cta">
+              Agendar sessão
+            </a>
+          </div>
+        </div>
+        
+        <!-- Acupuntura Estética Facial -->
+        <div class="modalidade-detalhada-item animate">
+          <div class="modalidade-detalhada-image">
+            <img src="ChatGPT Image 23 de jan. de 2026, 02_19_10.png" 
+                 alt="Acupuntura estética facial para rejuvenescimento" 
+                 loading="lazy">
+          </div>
+          
+          <div class="modalidade-detalhada-content">
+            <div class="modalidade-detalhada-header">
+              <div class="modalidade-detalhada-icon">
+                <i class="fas fa-spa"></i>
+              </div>
+              <h3 class="modalidade-detalhada-title">Acupuntura Estética Facial</h3>
+            </div>
+            
+            <p class="modalidade-detalhada-description">
+              Técnica que utiliza agulhas finíssimas para estimular a produção de colágeno, melhorar a circulação facial, tonificar músculos e promover rejuvenescimento natural, sem substâncias químicas.
+            </p>
+            
+            <ul class="modalidade-detalhada-benefits">
+              <li><i class="fas fa-check-circle"></i> Rejuvenescimento facial natural</li>
+              <li><i class="fas fa-check-circle"></i> Redução de rugas e linhas de expressão</li>
+              <li><i class="fas fa-check-circle"></i> Tonificação da musculatura facial</li>
+              <li><i class="fas fa-check-circle"></i> Melhora da textura e brilho da pele</li>
+            </ul>
+            
+            <a href="https://wa.me/5511976366471?text=Olá!%20Gostaria%20de%20agendar%20uma%20sessão%20de%20Acupuntura%20Estética%20Facial%20na%20Vital%20Kali." 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="modalidade-detalhada-cta">
+              Agendar sessão
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção CTA Final -->
+  <section class="acupuntura-final-cta">
+    <div class="acupuntura-final-content">
+      <h2 class="acupuntura-final-title">Recupere seu equilíbrio natural</h2>
+      <p class="acupuntura-final-text">
+        A acupuntura na Vital Kali é uma jornada de cuidado integral, onde cada tratamento é cuidadosamente planejado para atender suas necessidades específicas e promover o reequilíbrio entre corpo, mente e emoções.
+      </p>
+      
+      <div class="acupuntura-final-buttons">
+        <!-- Botão 1 - WhatsApp -->
+        <a href="https://wa.me/5511976366471?text=Olá!%20Gostaria%20de%20agendar%20minha%20primeira%20sessão%20de%20Acupuntura%20na%20Vital%20Kali." 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="acupuntura-final-button">
+          <i class="fab fa-whatsapp"></i> Agende sua sessão de Acupuntura
+        </a>
+        
+        <!-- Botão 2 - Instagram -->
+        <a href="https://www.instagram.com/vitalkali_saudeintegrativa/" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="acupuntura-final-button acupuntura-final-button-instagram">
+          <i class="fab fa-instagram"></i> Conheça nosso trabalho no Instagram
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer - IDÊNTICO AO SITE PRINCIPAL -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <!-- Logo and Description -->
+        <div class="footer-col">
+          <div class="footer-logo">
+            <img src="d5997227-cf04-447c-ae5d-3111d809608d.png" alt="Logo Vital Kali">
+          </div>
+          <p class="footer-description">
+            Espaço de bem-estar dedicado a promover saúde e equilíbrio através de práticas como Pilates, Yoga e Acupuntura.
+          </p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/vitalkali/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/5511976366471" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61587118406898" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h3 class="footer-title">Links Rápidos</h3>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fas fa-chevron-right"></i> Início</a></li>
+            <li><a href="acupuntura.html"><i class="fas fa-chevron-right"></i> Acupuntura</a></li>
+            <li><a href="sobre.html"><i class="fas fa-chevron-right"></i> Sobre Nós</a></li>
+            <li><a href="index.html#espaco"><i class="fas fa-chevron-right"></i> Nosso Espaço</a></li>
+            <li><a href="agendamento.html"><i class="fas fa-chevron-right"></i> Agendamento</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-col">
+          <h3 class="footer-title">Serviços</h3>
+          <ul class="footer-links">
+            <li><a href="acupuntura.html"><i class="fas fa-chevron-right"></i> Acupuntura Sistêmica</a></li>
+            <li><a href="acupuntura.html#auriculoterapia"><i class="fas fa-chevron-right"></i> Auriculoterapia</a></li>
+            <li><a href="acupuntura.html#ventosaterapia"><i class="fas fa-chevron-right"></i> Ventosaterapia</a></li>
+            <li><a href="acupuntura.html"><i class="fas fa-chevron-right"></i> Todos os Serviços</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+      <div class="footer-col">
+          <h3 class="footer-title">Contato</h3>
+          <ul class="footer-contact">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>R. José Antônio Fontes, 498 andar-1<br>Vila Tolstoi, São Paulo - SP<br>03255-000</span>
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <span>(11) 97636-6471</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span>vitalkali@outlook.comr</span>
+            </li>
+           <li>
+  <i class="fas fa-clock"></i>
+  <span>Seg-Sex: 7h às 12h e 16h às 21h<br>Sábado: 8h às 12h e 14h às 18h<br>(Acupuntura, Massagem e Auriculoterapia)</span>
+</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+           &copy; 2026 - <a href="https://codelinkbrasil.github.io/CodeLink-Brasil/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGn5XdDqy38XTzzNEcCbAtONPTNEjEtsfCEpHyRY9bvDq74Qrxugkv3rd6ai7k_aem_A3moSNQbJs6YbWv4zJ62EQ">CodeLink_Brasil</a>CodeLink_Brasil. Todos os direitos reservados.
+
+        </p>
+        <div class="footer-legal">
+          <a href="https://codelinkbrasil.github.io/CodeLink-Brasil/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGn5XdDqy38XTzzNEcCbAtONPTNEjEtsfCEpHyRY9bvDq74Qrxugkv3rd6ai7k_aem_A3moSNQbJs6YbWv4zJ62EQ">Política de Privacidade</a>
+          <a href="https://codelinkbrasil.github.io/CodeLink-Brasil/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGn5XdDqy38XTzzNEcCbAtONPTNEjEtsfCEpHyRY9bvDq74Qrxugkv3rd6ai7k_aem_A3moSNQbJs6YbWv4zJ62EQ">Termos de Uso</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Navigation scroll effect
+    const nav = document.getElementById("navigation")
+    const mobileToggle = document.getElementById("mobileToggle")
+    const mobileMenu = document.getElementById("mobileMenu")
+    const mobileLinks = document.querySelectorAll(".nav-link-mobile")
+
+    // Mobile menu toggle
+    mobileToggle.addEventListener("click", () => {
+      mobileToggle.classList.toggle("active")
+      mobileMenu.classList.toggle("active")
+    })
+
+    // Close mobile menu when clicking a link
+    mobileLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        mobileToggle.classList.remove("active")
+        mobileMenu.classList.remove("active")
+      })
+    })
+
+    // Mobile Accordion
+    const mobileAccordionToggle = document.querySelector('.mobile-accordion-toggle');
+    const mobileAccordionContent = document.querySelector('.mobile-accordion-content');
+
+    if (mobileAccordionToggle && mobileAccordionContent) {
+      mobileAccordionToggle.addEventListener('click', () => {
+        mobileAccordionToggle.classList.toggle('active');
+        mobileAccordionContent.classList.toggle('active');
+      });
+    }
+
+    // Scroll reveal animations para elementos institucionais
+    function checkScroll() {
+      const elements = document.querySelectorAll('.modalidade-detalhada-item, .acupuntura-imagem-card, .acupuntura-conteudo');
+      
+      elements.forEach(element => {
+        const elementTop = element.getBoundingClientRect().top;
+        const elementVisible = 150;
+        
+        if (elementTop < window.innerHeight - elementVisible) {
+          element.classList.add('animate');
+        }
+      });
+    }
+    
+    // Efeito de entrada suave para elementos da seção institucional
+    document.addEventListener('DOMContentLoaded', function() {
+      const elementosInstitucionais = document.querySelectorAll('.acupuntura-imagem-card, .acupuntura-conteudo > *');
+      
+      elementosInstitucionais.forEach((elemento, index) => {
+        elemento.style.opacity = '0';
+        elemento.style.transform = 'translateY(20px)';
+        elemento.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+        
+        setTimeout(() => {
+          elemento.style.opacity = '1';
+          elemento.style.transform = 'translateY(0)';
+        }, 300 + (index * 200));
+      });
+    });
+    
+    // Initial check
+    window.addEventListener('load', checkScroll);
+    // Check on scroll
+    window.addEventListener('scroll', checkScroll);
+    
+    // Smooth scroll for all anchor links with offset
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        
+        // Only handle internal anchor links
+        if (href.startsWith('#') && href !== '#') {
+          e.preventDefault();
+          
+          const targetId = href.substring(1);
+          const targetElement = document.getElementById(targetId);
+          
+          if (targetElement) {
+            // Close mobile menu if open
+            mobileToggle.classList.remove('active');
+            mobileMenu.classList.remove('active');
+            
+            // Close mobile accordion
+            if (mobileAccordionToggle && mobileAccordionContent) {
+              mobileAccordionToggle.classList.remove('active');
+              mobileAccordionContent.classList.remove('active');
+            }
+            
+            // Smooth scroll to target with offset for fixed header
+            const headerOffset = 100;
+            const elementPosition = targetElement.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+            
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: 'smooth'
+            });
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>
