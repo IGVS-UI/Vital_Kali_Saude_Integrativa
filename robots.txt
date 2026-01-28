@@ -1,0 +1,58 @@
+User-agent: *
+Allow: /
+
+# Sitemap do Vital Kali
+Sitemap: https://www.vitalkali.com.br/sitemap.xml
+
+# Otimização para Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 2
+
+# Otimização para Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 3
+
+# Bloquear áreas sensíveis (mesmo que não existam - por segurança)
+Disallow: /admin/
+Disallow: /administrator/
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+Disallow: /cgi-bin/
+Disallow: /includes/
+Disallow: /config/
+Disallow: /tmp/
+Disallow: /private/
+Disallow: /logs/
+
+# Bloquear arquivos desnecessários
+Disallow: /*.php$
+Disallow: /*.inc$
+Disallow: /*.sql$
+Disallow: /*.zip$
+Disallow: /*.gz$
+Disallow: /*.tar$
+Disallow: /*.rar$
+
+# Permitir recursos importantes
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.svg$
+Allow: /*.webp$
+
+# Diretivas específicas para Vital Kali
+# - Permitir todas as páginas de serviços
+Allow: /pilates.html
+Allow: /yoga.html
+Allow: /acupuntura.html
+Allow: /massagem.html
+Allow: /sobre.html
+Allow: /agendamento.html
+
+# Comentário: Vital Kali - Estúdio de Pilates, Yoga e Acupuntura Vila Tolstoi
+# Versão: 1.0 | Data: 2024-01-28
