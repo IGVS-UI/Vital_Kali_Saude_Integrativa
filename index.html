@@ -1,22 +1,217 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  <!-- Meta Charset e Viewport -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Vital Kali - Pilates, Yoga e Acupuntura para seu bem-estar">
-  <meta name="keywords" content="pilates, yoga, acupuntura, bem-estar, saúde, terapia, São Paulo">
-  <meta property="og:title" content="Vital Kali - Wellness Studio">
-  <meta property="og:description" content="Pilates, Yoga e Acupuntura para seu bem-estar">
-  <meta property="og:url" content="https://vitalkali.com.br">
+  
+  <!-- SEO Meta Tags -->
+  <title>Vital Kali - Estúdio de Pilates, Yoga e Acupuntura | Vila Tolstoi - São Paulo</title>
+  <meta name="description" content="Estúdio Vital Kali: Pilates terapêutico, Yoga Vinyasa Flow, Acupuntura e Saúde Integrativa. Localizado na Vila Tolstoi, São Paulo. Agende sua sessão!">
+  <meta name="keywords" content="pilates, yoga, acupuntura, saúde integrativa, vital kali, estúdio de pilates vila tolstoi, pilates vila tolstoi, yoga são paulo, acupuntura terapêutica, bem-estar, terapia, saúde, vila tolstoi, são paulo">
+  <meta name="author" content="Vital Kali">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.vitalkali.com.br">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.vitalkali.com.br">
+  <meta property="og:title" content="Vital Kali - Estúdio de Pilates, Yoga e Acupuntura | Vila Tolstoi">
+  <meta property="og:description" content="Pilates terapêutico, Yoga Vinyasa Flow, Acupuntura e Saúde Integrativa. Agende sua sessão no nosso estúdio na Vila Tolstoi, São Paulo.">
+  <meta property="og:image" content="https://www.vitalkali.com.br/d5997227-cf04-447c-ae5d-3111d809608d.png">
+  <meta property="og:image:alt" content="Logo Vital Kali Wellness Studio">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Vital Kali">
+  
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <title>Vital Kali - Wellness Studio</title>
+  <meta name="twitter:url" content="https://www.vitalkali.com.br">
+  <meta name="twitter:title" content="Vital Kali - Estúdio de Pilates, Yoga e Acupuntura">
+  <meta name="twitter:description" content="Pilates, Yoga e Acupuntura para seu bem-estar na Vila Tolstoi, São Paulo.">
+  <meta name="twitter:image" content="https://www.vitalkali.com.br/d5997227-cf04-447c-ae5d-3111d809608d.png">
+  
+  <!-- Structured Data / Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://www.vitalkali.com.br/#organization",
+        "name": "Vital Kali",
+        "description": "Estúdio especializado em Pilates, Yoga, Acupuntura e Saúde Integrativa na Vila Tolstoi, São Paulo.",
+        "url": "https://www.vitalkali.com.br",
+        "telephone": "+5511976366471",
+        "email": "vitalkali@outlook.com",
+        "image": "https://www.vitalkali.com.br/d5997227-cf04-447c-ae5d-3111d809608d.png",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rua José Antônio Fontes, 498",
+          "addressLocality": "São Paulo",
+          "addressRegion": "SP",
+          "addressCountry": "BR",
+          "postalCode": "03255-000",
+          "addressNeighborhood": "Vila Tolstoi"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "-23.600681",
+          "longitude": "-46.527391"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "07:00",
+            "closes": "12:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "16:00",
+            "closes": "21:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "08:00",
+            "closes": "12:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "14:00",
+            "closes": "18:00"
+          }
+        ],
+        "priceRange": "$$",
+        "sameAs": [
+          "https://www.instagram.com/vitalkali_saudeintegrativa/"
+        ],
+        "areaServed": {
+          "@type": "City",
+          "name": "São Paulo"
+        }
+      },
+      {
+        "@type": "HealthAndBeautyBusiness",
+        "@id": "https://www.vitalkali.com.br/#business",
+        "parentOrganization": {
+          "@id": "https://www.vitalkali.com.br/#organization"
+        },
+        "makesOffer": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Pilates Terapêutico",
+              "description": "Aulas de Pilates personalizadas para reabilitação e condicionamento físico."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Yoga Vinyasa Flow",
+              "description": "Prática de Yoga dinâmica que conecta movimento e respiração."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Acupuntura Sistêmica",
+              "description": "Tratamento terapêutico para dores, estresse e equilíbrio energético."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Saúde Integrativa",
+              "description": "Abordagem holística para promover equilíbrio e bem-estar integral."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.vitalkali.com.br/#website",
+        "url": "https://www.vitalkali.com.br",
+        "name": "Vital Kali",
+        "description": "Estúdio de Pilates, Yoga e Acupuntura na Vila Tolstoi, São Paulo",
+        "publisher": {
+          "@id": "https://www.vitalkali.com.br/#organization"
+        },
+        "inLanguage": "pt-BR"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://www.vitalkali.com.br/#webpage",
+        "url": "https://www.vitalkali.com.br",
+        "name": "Vital Kali - Estúdio de Pilates, Yoga e Acupuntura | Vila Tolstoi",
+        "isPartOf": {
+          "@id": "https://www.vitalkali.com.br/#website"
+        },
+        "description": "Estúdio especializado em Pilates terapêutico, Yoga Vinyasa Flow, Acupuntura e Saúde Integrativa na Vila Tolstoi, São Paulo.",
+        "breadcrumb": {
+          "@id": "https://www.vitalkali.com.br/#breadcrumb"
+        },
+        "inLanguage": "pt-BR",
+        "potentialAction": [
+          {
+            "@type": "ReadAction",
+            "target": [
+              "https://www.vitalkali.com.br"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  
+  <!-- Breadcrumb Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Início",
+        "item": "https://www.vitalkali.com.br"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Estúdio Vital Kali",
+        "item": "https://www.vitalkali.com.br/#espaco"
+      }
+    ]
+  }
+  </script>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="d5997227-cf04-447c-ae5d-3111d809608d.png">
+  
+  <!-- Sitemap -->
+  <link rel="sitemap" type="application/xml" href="https://www.vitalkali.com.br/sitemap.xml">
   
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Preload para imagens críticas -->
+  <link rel="preload" as="image" href="fotolocalpilates2.png">
+  <link rel="preload" as="image" href="d5997227-cf04-447c-ae5d-3111d809608d.png">
 </head>
 <style>
   /* Reset and Base Styles */
@@ -442,16 +637,16 @@ img {
 
 @media (max-width: 768px) {
   .hero-carousel {
-    height: 100vh;
-    min-height: 600px;
+    height: 85vh;
+    min-height: 500px;
     margin-top: 70px;
   }
 }
 
 @media (max-width: 480px) {
   .hero-carousel {
-    height: 95vh;
-    min-height: 500px;
+    height: 80vh;
+    min-height: 450px;
   }
 }
 
@@ -500,6 +695,17 @@ img {
   mix-blend-mode: multiply;
 }
 
+@media (max-width: 768px) {
+  .hero-overlay {
+    background: linear-gradient(
+      135deg,
+      rgba(44, 62, 80, 0.9) 0%,
+      rgba(74, 124, 124, 0.8) 50%,
+      rgba(184, 163, 141, 0.7) 100%
+    );
+  }
+}
+
 .hero-content {
   position: relative;
   display: flex;
@@ -523,12 +729,22 @@ img {
   .hero-content-wrapper {
     margin-left: 0;
     text-align: center;
-    padding: 0 1.5rem; /* Mais espaço nas bordas */
+    padding: 0 3.5rem !important; /* Mais espaço nas bordas para setas */
   }
   
   .hero-content {
-    padding: 2rem 1rem; /* Reduzido padding lateral no mobile */
+    padding: 1.5rem 0.5rem !important; /* Reduzido padding lateral no mobile */
     justify-content: center; /* Centraliza conteúdo */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content-wrapper {
+    padding: 0 3rem !important;
+  }
+  
+  .hero-content {
+    padding: 1rem 0.25rem !important;
   }
 }
 
@@ -544,7 +760,7 @@ img {
   .hero-text-container {
     text-align: center;
     max-width: 100%;
-    padding: 0; /* Remove padding extra */
+    padding: 0;
     margin: 0 auto; /* Centraliza */
   }
 }
@@ -610,7 +826,7 @@ img {
 
 @media (max-width: 480px) {
   .hero-title {
-    font-size: 2.5rem; /* Ainda menor para mobile pequeno */
+    font-size: 2.5rem !important; /* Ainda menor para mobile pequeno */
   }
 }
 
@@ -674,8 +890,14 @@ img {
 
 @media (max-width: 480px) {
   .hero-subtitle {
-    font-size: 1rem;
+    font-size: 1rem !important;
     margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero-subtitle {
+    font-size: 0.9rem;
   }
 }
 
@@ -777,7 +999,7 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.2);
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  z-index: 20; /* Fica acima do conteúdo */
+  z-index: 30; /* Fica acima do conteúdo */
   width: 60px;
   height: 60px;
   display: flex;
@@ -788,28 +1010,36 @@ img {
 /* Ajuste das setas para diferentes tamanhos de tela */
 @media (max-width: 768px) {
   .hero-arrow {
-    width: 50px;
-    height: 50px;
-    padding: 1rem;
-    top: 45%; /* Ajustado para não sobrepor conteúdo */
+    width: 40px;
+    height: 40px;
+    padding: 0.75rem;
+    top: 50%;
   }
   
   /* Garante que as setas não sobreponham o conteúdo no mobile */
+  .hero-arrow-left {
+    left: 0.75rem !important;
+  }
+  
+  .hero-arrow-right {
+    right: 0.75rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-arrow {
+    width: 35px;
+    height: 35px;
+    padding: 0.6rem;
+    top: 50%;
+  }
+  
   .hero-arrow-left {
     left: 0.5rem !important;
   }
   
   .hero-arrow-right {
     right: 0.5rem !important;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-arrow {
-    width: 45px;
-    height: 45px;
-    padding: 0.8rem;
-    top: 40%; /* Ajuste adicional para telas muito pequenas */
   }
 }
 
@@ -837,16 +1067,6 @@ img {
   }
 }
 
-@media (max-width: 768px) {
-  .hero-arrow-left {
-    left: 0.5rem;
-  }
-  
-  .hero-arrow-right {
-    right: 0.5rem;
-  }
-}
-
 .hero-indicators {
   position: absolute;
   bottom: 3rem;
@@ -859,7 +1079,8 @@ img {
 
 @media (max-width: 768px) {
   .hero-indicators {
-    bottom: 2rem; /* Mais espaço no mobile */
+    bottom: 1.5rem; /* Mais espaço no mobile */
+    gap: 0.5rem;
   }
 }
 
@@ -873,6 +1094,13 @@ img {
   width: 0.5rem;
 }
 
+@media (max-width: 768px) {
+  .hero-indicator {
+    width: 0.4rem;
+    height: 0.4rem;
+  }
+}
+
 .hero-indicator:hover {
   background-color: rgba(255, 255, 255, 0.5);
   transform: scale(1.2);
@@ -881,6 +1109,12 @@ img {
 .hero-indicator-active {
   background-color: var(--white);
   width: 3rem;
+}
+
+@media (max-width: 768px) {
+  .hero-indicator-active {
+    width: 2rem;
+  }
 }
 
 .hero-indicator-active:hover {
@@ -949,13 +1183,52 @@ img {
 
 @media (max-width: 768px) {
   .mouse-scroll {
-    bottom: 30px;
+    bottom: 2.5rem;
   }
   
-  .hero-indicators {
-    bottom: 5rem;
+  .mouse {
+    width: 25px;
+    height: 40px;
+  }
+  
+  .scroll-text {
+    font-size: 0.7rem;
   }
 }
+
+/* AJUSTES DE RESPONSIVIDADE PARA MOBILE - CONTEÚDO DENTRO DAS SETAS */
+
+/* Para telas entre 768px e 1024px (tablet) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero-content-wrapper {
+    margin-left: 8%;
+    padding: 0 2rem;
+  }
+  
+  .hero-title {
+    font-size: 4rem !important;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.25rem !important;
+  }
+}
+
+/* Para telas muito pequenas (até 480px) - Botões */
+@media (max-width: 480px) {
+  .hero-buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .hero-cta, .hero-cta-secondary {
+    width: 100%;
+    max-width: 220px;
+    margin: 0 auto;
+  }
+}
+
+/* Restante do CSS permanece igual... */
 
 /* Benefits Section Styles - Responsividade melhorada */
 .benefits-section {
@@ -2356,7 +2629,7 @@ html {
   }
 }
 </style>
-<body>
+<body itemscope itemtype="https://schema.org/HealthAndBeautyBusiness">
   <!-- Botão Flutuante com Menu Expandido -->
   <div class="floating-button-container">
     <button class="floating-button-main" id="floatingButtonMain" aria-label="Abrir menu de contato">
@@ -2388,12 +2661,13 @@ html {
     <div class="nav-container">
       <div class="nav-content">
         <!-- Logo -->
-        <a href="#" class="nav-logo">
+        <a href="https://www.vitalkali.com.br" class="nav-logo" aria-label="Vital Kali - Página inicial">
           <img src="d5997227-cf04-447c-ae5d-3111d809608d.png" 
-               alt="Logo Vital Kali - Wellness Studio" 
+               alt="Logo Vital Kali - Estúdio de Pilates, Yoga e Acupuntura na Vila Tolstoi, São Paulo" 
                width="150" 
                height="150"
-               loading="eager">
+               loading="eager"
+               itemprop="logo">
         </a>
 
         <!-- Desktop Menu -->
@@ -2418,14 +2692,11 @@ html {
               <a href="acupuntura.html" class="nav-dropdown-item">
                 <i class="fas fa-leaf"></i> Acupuntura Sistêmica
               </a>
-            
-            
             </div>
           </div>
           
           <a href="sobre.html" class="nav-link">Quem Somos</a>
           <a href="#espaco" class="nav-link">Espaço</a>
-          <a href="agendamento.html" class="nav-link">Agendamento</a>
           <a href="https://wa.me/5511976366471?text=Olá!%20Gostaria%20de%20agendar%20uma%20sessão%20no%20Vital%20Kali." target="_blank" rel="noopener noreferrer" class="nav-cta">
             Agende sua sessão
           </a>
@@ -2461,27 +2732,17 @@ html {
             <a href="#yoga-vinyasa" class="nav-link-mobile">
               <i class="fas fa-spa"></i> Yoga Vinyasa Flow
             </a>
-            <a href="#meditacao" class="nav-link-mobile">
-              <i class="fas fa-brain"></i> Meditação
-            </a>
             <a href="#massagem" class="nav-link-mobile">
               <i class="fas fa-hands"></i> Massagem Terapêutica
             </a>
             <a href="#acupuntura" class="nav-link-mobile">
               <i class="fas fa-leaf"></i> Acupuntura Sistêmica
             </a>
-            <a href="#ventosaterapia" class="nav-link-mobile">
-              <i class="fas fa-wind"></i> Ventosaterapia
-            </a>
-            <a href="#auriculoterapia" class="nav-link-mobile">
-              <i class="fas fa-ear"></i> Auriculoterapia
-            </a>
           </div>
         </div>
         
         <a href="sobre.html" class="nav-link-mobile">Sobre</a>
         <a href="#espaco" class="nav-link-mobile">Espaço</a>
-        <a href="agendamento.html" class="nav-link-mobile">Agendamento</a>
         <a href="https://wa.me/5511976366471?text=Olá!%20Gostaria%20de%20agendar%20uma%20sessão%20no%20Vital%20Kali." target="_blank" rel="noopener noreferrer" class="nav-cta-mobile">
           Agende sua sessão
         </a>
@@ -2489,484 +2750,488 @@ html {
     </div>
   </nav>
 
-  <!-- Hero Carousel - REORGANIZADO COM NOVA ORDEM -->
-  <section class="hero-carousel" id="heroCarousel">
-    
-    <!-- Slide 1: Vital Kali Institucional (AGORA PRIMEIRO) -->
-    <div class="hero-slide hero-slide-active" data-slide="0">
-      <div class="hero-image-container">
-        <img src="fotolocalpilates2.png" 
-             alt="Espaço Vital Kali com ambiente minimalista, plantas e madeira" 
-             class="hero-image"
-             loading="lazy">
-        <div class="hero-overlay"></div>
-      </div>
-      <div class="hero-content">
-        <div class="hero-content-wrapper">
-          <div class="hero-text-container">
-            <h1 class="hero-title">VITAL KALI</h1>
-            <p class="hero-subtitle">Temos o prazer de anunciar a inauguração do nosso estúdio dia 31/01</p>
-            <div class="hero-buttons">
-              <a href="https://wa.me/5511976366471?text=Olá!%20Gostaria%20de%20agendar%20uma%20sessão%20no%20Vital%20Kali." target="_blank" rel="noopener noreferrer" class="hero-cta">
-                Agende sua sessão
-              </a>
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Carousel - REORGANIZADO COM NOVA ORDEM -->
+    <section class="hero-carousel" id="heroCarousel">
+      
+      <!-- Slide 1: Vital Kali Institucional (AGORA PRIMEIRO) -->
+      <div class="hero-slide hero-slide-active" data-slide="0">
+        <div class="hero-image-container">
+          <img src="fotolocalpilates2.png" 
+               alt="Estúdio Vital Kali na Vila Tolstoi - Ambiente de Pilates, Yoga e Acupuntura com equipamentos profissionais" 
+               class="hero-image"
+               loading="lazy">
+          <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+          <div class="hero-content-wrapper">
+            <div class="hero-text-container">
+              <h1 class="hero-title">VITAL KALI</h1>
+              <p class="hero-subtitle">Estúdio de Pilates, Yoga e Acupuntura na Vila Tolstoi, São Paulo - Saúde Integrativa para seu bem-estar</p>
+              <div class="hero-buttons">
+                <a href="https://wa.me/5511976366471?text=Olá!%20Gostaria%20de%20agendar%20uma%20sessão%20no%20Vital%20Kali." target="_blank" rel="noopener noreferrer" class="hero-cta">
+                  Agende sua sessão
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Slide 2: Pilates (SEGUNDO) -->
-    <div class="hero-slide" data-slide="1">
-      <div class="hero-image-container">
-        <img src="lady.png" 
-             alt="Pessoa praticando Pilates em estúdio sofisticado, controle preciso" 
-             class="hero-image"
-             loading="lazy">
-        <div class="hero-overlay"></div>
-      </div>
-      <div class="hero-content">
-        <div class="hero-content-wrapper">
-          <div class="hero-text-container">
-            <h1 class="hero-title">PILATES</h1>
-            <p class="hero-subtitle">Força, controle e consciência corporal</p>
-            <div class="hero-buttons">
-              <a href="https://wa.me/5511976366471?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20aula%20experimental%20de%20Pilates%20no%20Vital%20Kali." target="_blank" rel="noopener noreferrer" class="hero-cta">
-                Agende sua sessão
-              </a>
-              <a href="pilates.html" class="hero-cta-secondary">
-                Saiba mais 
-              </a>
+      <!-- Slide 2: Pilates (SEGUNDO) -->
+      <div class="hero-slide" data-slide="1">
+        <div class="hero-image-container">
+          <img src="lady.png" 
+               alt="Aula de Pilates no Vital Kali Vila Tolstoi - Exercícios terapêuticos para fortalecimento muscular" 
+               class="hero-image"
+               loading="lazy">
+          <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+          <div class="hero-content-wrapper">
+            <div class="hero-text-container">
+              <h2 class="hero-title">PILATES</h2>
+              <p class="hero-subtitle">Pilates terapêutico no Vital Kali Vila Tolstoi - Fortalecimento, controle postural e reabilitação</p>
+              <div class="hero-buttons">
+                <a href="https://wa.me/5511976366471?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20aula%20experimental%20de%20Pilates%20no%20Vital%20Kali." target="_blank" rel="noopener noreferrer" class="hero-cta">
+                  Agende sua sessão
+                </a>
+                <a href="pilates.html" class="hero-cta-secondary">
+                  Saiba mais 
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Slide 3: Yoga (TERCEIRO) -->
-    <div class="hero-slide" data-slide="2">
-      <div class="hero-image-container">
-        <img src="yogaslide.png" 
-             alt="Mulher praticando yoga em postura de arco profundo, estilo editorial" 
-             class="hero-image"
-             loading="lazy">
-        <div class="hero-overlay"></div>
-      </div>
-      <div class="hero-content">
-        <div class="hero-content-wrapper">
-          <div class="hero-text-container">
-            <h1 class="hero-title">YOGA</h1>
-            <p class="hero-subtitle">Conexão, equilíbrio e presença</p>
-            <div class="hero-buttons">
-              <a href="https://wa.me/5511976366471?text=Olá!%20Gostaria%20de%20agendar%20uma%20aula%20de%20Yoga." target="_blank" rel="noopener noreferrer" class="hero-cta">
-                Agende sua sessão
-              </a>
-              <a href="yoga.html" class="hero-cta-secondary">
-                Saiba Mais
-              </a>
+      <!-- Slide 3: Yoga (TERCEIRO) -->
+      <div class="hero-slide" data-slide="2">
+        <div class="hero-image-container">
+          <img src="yogaslide.png" 
+               alt="Aula de Yoga no Vital Kali São Paulo - Prática de Vinyasa Flow para equilíbrio e flexibilidade" 
+               class="hero-image"
+               loading="lazy">
+          <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+          <div class="hero-content-wrapper">
+            <div class="hero-text-container">
+              <h2 class="hero-title">YOGA</h2>
+              <p class="hero-subtitle">Yoga Vinyasa Flow no Vital Kali - Conexão mente-corpo, redução de estresse e aumento da flexibilidade</p>
+              <div class="hero-buttons">
+                <a href="https://wa.me/5511976366471?text=Olá!%20Gostaria%20de%20agendar%20uma%20aula%20de%20Yoga." target="_blank" rel="noopener noreferrer" class="hero-cta">
+                  Agende sua sessão
+                </a>
+                <a href="yoga.html" class="hero-cta-secondary">
+                  Saiba Mais
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Slide 4: Acupuntura (QUARTO) -->
-    <div class="hero-slide" data-slide="3">
-      <div class="hero-image-container">
-        <img src="acupuntura.png" 
-             alt="Sessão de acupuntura terapêutica em ambiente tranquilo" 
-             class="hero-image"
-             loading="lazy">
-        <div class="hero-overlay"></div>
-      </div>
-      <div class="hero-content">
-        <div class="hero-content-wrapper">
-          <div class="hero-text-container">
-            <h1 class="hero-title">ACUPUNTURA</h1>
-            <p class="hero-subtitle">Tratamento terapêutico para dores, estresse e equilíbrio energético natural</p>
-            <div class="hero-buttons">
-              <a href="https://wa.me/5511976366471?text=Olá!%20Gostaria%20de%20agendar%20uma%20sessão%20de%20Acupuntura." target="_blank" rel="noopener noreferrer" class="hero-cta">
-                Agende sua sessão
-              </a>
-              <a href="acunputura.html" class="hero-cta-secondary">
-                Saiba mais
-              </a>
+      <!-- Slide 4: Acupuntura (QUARTO) -->
+      <div class="hero-slide" data-slide="3">
+        <div class="hero-image-container">
+          <img src="acupuntura.png" 
+               alt="Sessão de Acupuntura no Vital Kali Vila Tolstoi - Tratamento terapêutico para dores e equilíbrio energético" 
+               class="hero-image"
+               loading="lazy">
+          <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+          <div class="hero-content-wrapper">
+            <div class="hero-text-container">
+              <h2 class="hero-title">ACUPUNTURA</h2>
+              <p class="hero-subtitle">Acupuntura sistêmica no Vital Kali - Alívio de dores, redução do estresse e tratamento terapêutico natural</p>
+              <div class="hero-buttons">
+                <a href="https://wa.me/5511976366471?text=Olá!%20Gostaria%20de%20agendar%20uma%20sessão%20de%20Acupuntura." target="_blank" rel="noopener noreferrer" class="hero-cta">
+                  Agende sua sessão
+                </a>
+                <a href="acunputura.html" class="hero-cta-secondary">
+                  Saiba mais
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Navigation Arrows -->
-    <button class="hero-arrow hero-arrow-left" id="prevSlide" aria-label="Slide anterior">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <polyline points="15 18 9 12 15 6"></polyline>
-      </svg>
-    </button>
-    <button class="hero-arrow hero-arrow-right" id="nextSlide" aria-label="Próximo slide">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <polyline points="9 18 15 12 9 6"></polyline>
-      </svg>
-    </button>
+      <!-- Navigation Arrows -->
+      <button class="hero-arrow hero-arrow-left" id="prevSlide" aria-label="Slide anterior">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+      <button class="hero-arrow hero-arrow-right" id="nextSlide" aria-label="Próximo slide">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
 
-    <!-- Slide Indicators -->
-    <div class="hero-indicators">
-      <button class="hero-indicator hero-indicator-active" data-slide-to="0" aria-label="Ir para slide 1"></button>
-      <button class="hero-indicator" data-slide-to="1" aria-label="Ir para slide 2"></button>
-      <button class="hero-indicator" data-slide-to="2" aria-label="Ir para slide 3"></button>
-      <button class="hero-indicator" data-slide-to="3" aria-label="Ir para slide 4"></button>
-    </div>
-  </section>
-
-  <!-- Benefits Section -->
-  <section class="benefits-section" id="servicos">
-    <div class="benefits-container">
-      <div class="benefits-header">
-        <h2 class="benefits-title">Benefícios e Objetivo do Vital Kali</h2>
-        <p class="benefits-description">
-          Nosso objetivo é oferecer um espaço acolhedor para transformação pessoal, combinando técnicas tradicionais e modernas para promover equilíbrio e bem-estar.
-        </p>
+      <!-- Slide Indicators -->
+      <div class="hero-indicators">
+        <button class="hero-indicator hero-indicator-active" data-slide-to="0" aria-label="Ir para slide 1"></button>
+        <button class="hero-indicator" data-slide-to="1" aria-label="Ir para slide 2"></button>
+        <button class="hero-indicator" data-slide-to="2" aria-label="Ir para slide 3"></button>
+        <button class="hero-indicator" data-slide-to="3" aria-label="Ir para slide 4"></button>
       </div>
+    </section>
 
-      <div class="benefits-grid">
-        <!-- Benefit 1 -->
-        <div class="benefit-item">
-          <div class="benefit-icon">
-            <i class="fas fa-heart"></i>
-          </div>
-          <div class="benefit-content">
-            <h3 class="benefit-title">Saúde Física e Mental</h3>
-            <p class="benefit-description">Melhore sua saúde com nossas aulas personalizadas, promovendo equilíbrio e bem-estar integral.</p>
-          </div>
+    <!-- Benefits Section -->
+    <section class="benefits-section" id="servicos">
+      <div class="benefits-container">
+        <div class="benefits-header">
+          <h2>Benefícios e Objetivo do Vital Kali - Saúde Integrativa</h2>
+          <p class="benefits-description">
+            Nosso objetivo é oferecer um espaço acolhedor na Vila Tolstoi para transformação pessoal, combinando Pilates, Yoga e Acupuntura para promover equilíbrio e bem-estar integral.
+          </p>
         </div>
 
-        <!-- Benefit 2 -->
-        <div class="benefit-item">
-          <div class="benefit-icon">
-            <i class="fas fa-home"></i>
-          </div>
-          <div class="benefit-content">
-            <h3 class="benefit-title">Espaço Acolhedor</h3>
-            <p class="benefit-description">Um ambiente pensado para transformação pessoal, combinando técnicas tradicionais e modernas.</p>
-          </div>
-        </div>
-
-        <!-- Benefit 3 -->
-        <div class="benefit-item">
-          <div class="benefit-icon">
-            <i class="fas fa-user-cog"></i>
-          </div>
-          <div class="benefit-content">
-            <h3 class="benefit-title">Técnicas Personalizadas</h3>
-            <p class="benefit-description">Pilates, Yoga e Acupuntura adaptados às suas necessidades específicas de saúde.</p>
-          </div>
-        </div>
-
-        <!-- Benefit 4 -->
-        <div class="benefit-item">
-          <div class="benefit-icon">
-            <i class="fas fa-balance-scale"></i>
-          </div>
-          <div class="benefit-content">
-            <h3 class="benefit-title">Equilíbrio e Bem-Estar</h3>
-            <p class="benefit-description">Promovemos harmonia entre corpo e mente através de práticas terapêuticas eficazes.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Location Section -->
-  <section class="location-section" id="espaco">
-    <div class="location-container">
-      <div class="location-header">
-        <h2 class="location-title">Nosso Espaço</h2>
-        <p class="location-description">
-          Conheça nosso estúdio cuidadosamente projetado para oferecer o máximo de conforto e bem-estar durante suas práticas.
-        </p>
-      </div>
-
-      <div class="location-content">
-        <div class="location-info">
-          <div class="location-address">
-            <h3 class="address-title">
-              <i class="fas fa-map-marker-alt"></i>
-              Endereço
-            </h3>
-            <div class="address-details">
-              <p>
-                <i class="fas fa-home"></i>
-                <strong>R. José Antônio Fontes, 498 - Vila Tolstoi, São Paulo - SP, 03255-000</strong>
-              </p>
-              <p>
-                <i class="fas fa-map"></i>
-                São Paulo - SP
-              </p>
-              <p>
-                <i class="fas fa-clock"></i>
-                <strong>Horário de Funcionamento:</strong><br>
-                Segunda a Sexta: 7h às 12h e das 16h às 21h<br>
-                Sábado: 8h às 12h e 14h às 18h (Acupuntura, Massagem e Auriculoterapia)<br>
-                Domingo: Fechado
-              </p>
+        <div class="benefits-grid">
+          <!-- Benefit 1 -->
+          <div class="benefit-item">
+            <div class="benefit-icon">
+              <i class="fas fa-heart"></i>
             </div>
-            <a href="https://wa.me/5511976366471?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20localização%20do%20Vital%20Kali." target="_blank" rel="noopener noreferrer" class="hero-cta" style="display: inline-block; width: auto; padding: 1rem 2rem;">
-              <i class="fab fa-whatsapp"></i> Como chegar
-            </a>
+            <div class="benefit-content">
+              <h3>Saúde Física e Mental</h3>
+              <p class="benefit-description">Melhore sua saúde com nossas aulas de Pilates e Yoga personalizadas, promovendo equilíbrio e bem-estar integral na Vila Tolstoi.</p>
+            </div>
+          </div>
+
+          <!-- Benefit 2 -->
+          <div class="benefit-item">
+            <div class="benefit-icon">
+              <i class="fas fa-home"></i>
+            </div>
+            <div class="benefit-content">
+              <h3>Espaço Acolhedor na Vila Tolstoi</h3>
+              <p class="benefit-description">Estúdio Vital Kali na Vila Tolstoi projetado para transformação pessoal, combinando técnicas tradicionais e modernas de saúde integrativa.</p>
+            </div>
+          </div>
+
+          <!-- Benefit 3 -->
+          <div class="benefit-item">
+            <div class="benefit-icon">
+              <i class="fas fa-user-cog"></i>
+            </div>
+            <div class="benefit-content">
+              <h3>Técnicas Personalizadas</h3>
+              <p class="benefit-description">Pilates terapêutico, Yoga Vinyasa e Acupuntura adaptados às suas necessidades específicas de saúde no Vital Kali.</p>
+            </div>
+          </div>
+
+          <!-- Benefit 4 -->
+          <div class="benefit-item">
+            <div class="benefit-icon">
+              <i class="fas fa-balance-scale"></i>
+            </div>
+            <div class="benefit-content">
+              <h3>Equilíbrio e Bem-Estar</h3>
+              <p class="benefit-description">Promovemos harmonia entre corpo e mente através de práticas terapêuticas eficazes de saúde integrativa.</p>
+            </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="location-map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.998880194731!2d-46.52739128444273!3d-23.60068107901164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5d65fc19e02b%3A0xa4dc769057918ca9!2sR.%20Jos%C3%A9%20Ant%C3%B4nio%20Fontes%2C%20498%20-%20Vila%20Tolstoi%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003255-000!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
-            width="100%"
-            height="450"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            title="Localização do Vital Kali - R. José Antônio Fontes, 498 - Vila Tolstoi, São Paulo">
-          </iframe>
+    <!-- Location Section -->
+    <section class="location-section" id="espaco">
+      <div class="location-container">
+        <div class="location-header">
+          <h2>Estúdio Vital Kali - Vila Tolstoi, São Paulo</h2>
+          <p class="location-description">
+            Conheça nosso estúdio de Pilates, Yoga e Acupuntura na Vila Tolstoi, cuidadosamente projetado para oferecer o máximo de conforto e bem-estar durante suas práticas.
+          </p>
+        </div>
+
+        <div class="location-content">
+          <div class="location-info">
+            <div class="location-address" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+              <h3 class="address-title">
+                <i class="fas fa-map-marker-alt"></i>
+                Endereço do Vital Kali
+              </h3>
+              <div class="address-details">
+                <p>
+                  <i class="fas fa-home"></i>
+                  <strong><span itemprop="streetAddress">R. José Antônio Fontes, 498</span> - <span itemprop="addressLocality">Vila Tolstoi</span>, <span itemprop="addressRegion">São Paulo - SP</span>, <span itemprop="postalCode">03255-000</span></strong>
+                </p>
+                <p>
+                  <i class="fas fa-map"></i>
+                  <span itemprop="addressLocality">São Paulo</span> - <span itemprop="addressRegion">SP</span>
+                </p>
+                <p>
+                  <i class="fas fa-clock"></i>
+                  <strong>Horário de Funcionamento:</strong><br>
+                  Segunda a Sexta: 7h às 12h e das 16h às 21h<br>
+                  Sábado: 8h às 12h e 14h às 18h (Acupuntura, Massagem e Auriculoterapia)<br>
+                  Domingo: Fechado
+                </p>
+              </div>
+              <a href="https://wa.me/5511976366471?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20localização%20do%20Vital%20Kali%20na%20Vila%20Tolstoi." target="_blank" rel="noopener noreferrer" class="hero-cta" style="display: inline-block; width: auto; padding: 1rem 2rem;">
+                <i class="fab fa-whatsapp"></i> Como chegar
+              </a>
+            </div>
+          </div>
+
+          <div class="location-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.998880194731!2d-46.52739128444273!3d-23.60068107901164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5d65fc19e02b%3A0xa4dc769057918ca9!2sR.%20Jos%C3%A9%20Ant%C3%B4nio%20Fontes%2C%20498%20-%20Vila%20Tolstoi%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003255-000!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
+              width="100%"
+              height="450"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Localização do Estúdio Vital Kali - R. José Antônio Fontes, 498 - Vila Tolstoi, São Paulo - SP"
+              aria-label="Mapa da localização do Vital Kali na Vila Tolstoi, São Paulo">
+            </iframe>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Space Preview Section -->
-<section class="space-preview-section">
-  <div class="space-preview-container">
-    <div class="space-preview-header">
-      <h2 class="space-preview-title">Conheça Nosso Espaço</h2>
-      <p class="space-preview-description">
-        Um ambiente projetado especialmente para seu bem-estar e conforto durante as práticas.
-      </p>
-    </div>
+    <!-- Space Preview Section -->
+    <section class="space-preview-section">
+      <div class="space-preview-container">
+        <div class="space-preview-header">
+          <h2>Conheça Nosso Estúdio na Vila Tolstoi</h2>
+          <p class="space-preview-description">
+            Ambiente do Vital Kali projetado especialmente para seu bem-estar e conforto durante as práticas de Pilates, Yoga e Acupuntura.
+          </p>
+        </div>
 
-    <div class="space-preview-content">
-      <!-- Substituindo a imagem de "em breve" por uma imagem fictícia do estúdio -->
-      <div class="space-preview-image">
-        <img src="fotolocalpilates2.png" 
-             alt="Espaço Vital Kali - Estúdio de Pilates e Yoga com tatames, espelhos, plantas e iluminação natural"
-             class="space-preview-photo">
-        <div class="space-preview-overlay"></div>
-        <div class="space-preview-caption">
-          <h3 class="space-preview-caption-title">Nosso Estúdio</h3>
-          <p class="space-preview-caption-text">Ambiente acolhedor e equipado para sua prática</p>
+        <div class="space-preview-content">
+          <!-- Substituindo a imagem de "em breve" por uma imagem fictícia do estúdio -->
+          <div class="space-preview-image">
+            <img src="fotolocalpilates2.png" 
+                 alt="Estúdio Vital Kali Vila Tolstoi - Espaço de Pilates e Yoga com tatames, equipamentos profissionais, espelhos e plantas"
+                 class="space-preview-photo">
+            <div class="space-preview-overlay"></div>
+            <div class="space-preview-caption">
+              <h3 class="space-preview-caption-title">Estúdio Vital Kali</h3>
+              <p class="space-preview-caption-text">Ambiente acolhedor e equipado para sua prática de saúde integrativa</p>
+            </div>
+          </div>
+
+          <div class="space-preview-features">
+            <div class="space-feature">
+              <i class="fas fa-spa space-feature-icon"></i>
+              <h3 class="space-feature-title">Ambiente Acolhedor</h3>
+              <p class="space-feature-description">Espaço Vital Kali projetado para promover relaxamento e concentração durante as práticas de Pilates e Yoga.</p>
+            </div>
+
+            <div class="space-feature">
+              <i class="fas fa-lightbulb space-feature-icon"></i>
+              <h3 class="space-feature-title">Iluminação Natural</h3>
+              <p class="space-feature-description">Ampla entrada de luz natural no estúdio Vital Kali criando um ambiente energizante e saudável.</p>
+            </div>
+
+            <div class="space-feature">
+              <i class="fas fa-shield-alt space-feature-icon"></i>
+              <h3 class="space-feature-title">Segurança e Conforto</h3>
+              <p class="space-feature-description">Equipamentos de qualidade e ambiente seguro para todas as práticas no Vital Kali Vila Tolstoi.</p>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="space-preview-features">
-        <div class="space-feature">
-          <i class="fas fa-spa space-feature-icon"></i>
-          <h3 class="space-feature-title">Ambiente Acolhedor</h3>
-          <p class="space-feature-description">Espaço projetado para promover relaxamento e concentração durante as práticas.</p>
+    <!-- Reviews Carousel Section -->
+    <section class="reviews-carousel-section">
+      <div class="reviews-container">
+        <div class="reviews-header">
+          <h2>O que nossos clientes dizem sobre o Vital Kali</h2>
+          <p class="reviews-description">
+            Experiências reais de transformação e bem-estar no estúdio Vital Kali de Pilates, Yoga e Acupuntura na Vila Tolstoi
+          </p>
         </div>
 
-        <div class="space-feature">
-          <i class="fas fa-lightbulb space-feature-icon"></i>
-          <h3 class="space-feature-title">Iluminação Natural</h3>
-          <p class="space-feature-description">Ampla entrada de luz natural criando um ambiente energizante e saudável.</p>
-        </div>
-
-        <div class="space-feature">
-          <i class="fas fa-shield-alt space-feature-icon"></i>
-          <h3 class="space-feature-title">Segurança e Conforto</h3>
-          <p class="space-feature-description">Equipamentos de qualidade e ambiente seguro para todas as práticas.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-  <!-- Reviews Carousel Section -->
-  <section class="reviews-carousel-section">
-    <div class="reviews-container">
-      <div class="reviews-header">
-        <h2 class="reviews-title">O que nossos clientes dizem</h2>
-        <p class="reviews-description">
-          Experiências reais de transformação e bem-estar no Vital Kali
-        </p>
-      </div>
-
-      <div class="reviews-carousel">
-        <!-- Carousel Wrapper -->
-        <div class="carousel-wrapper">
-          <div class="carousel-track">
-            <!-- Review 1 -->
-            <div class="review-card active">
-              <div class="review-header">
-                <div class="reviewer-avatar">
-                  <i class="fas fa-user-circle"></i>
+        <div class="reviews-carousel">
+          <!-- Carousel Wrapper -->
+          <div class="carousel-wrapper">
+            <div class="carousel-track">
+              <!-- Review 1 -->
+              <div class="review-card active">
+                <div class="review-header">
+                  <div class="reviewer-avatar">
+                    <i class="fas fa-user-circle"></i>
+                  </div>
+                  <div class="reviewer-info">
+                    <h4 class="reviewer-name">Mariana Silva</h4>
+                    <div class="review-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
                 </div>
-                <div class="reviewer-info">
-                  <h4 class="reviewer-name">Mariana Silva</h4>
-                  <div class="review-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+                <div class="review-content">
+                  <p class="review-text">
+                    "O Pilates no Vital Kali transformou minha postura e aliviou minhas dores nas costas. O espaço é incrível e a atenção é personalizada. Recomendo muito o estúdio na Vila Tolstoi!"
+                  </p>
+                  <div class="review-service">
+                    <i class="fas fa-circle"></i>
+                    <span>Pilates Terapêutico</span>
                   </div>
                 </div>
               </div>
-              <div class="review-content">
-                <p class="review-text">
-                  "O Pilates no Vital Kali transformou minha postura e aliviou minhas dores nas costas. O espaço é incrível e a atenção é personalizada. Recomendo muito!"
-                </p>
-                <div class="review-service">
-                  <i class="fas fa-circle"></i>
-                  <span>Pilates Terapêutico</span>
-                </div>
-              </div>
-            </div>
 
-            <!-- Review 2 -->
-            <div class="review-card">
-              <div class="review-header">
-                <div class="reviewer-avatar">
-                  <i class="fas fa-user-circle"></i>
+              <!-- Review 2 -->
+              <div class="review-card">
+                <div class="review-header">
+                  <div class="reviewer-avatar">
+                    <i class="fas fa-user-circle"></i>
+                  </div>
+                  <div class="reviewer-info">
+                    <h4 class="reviewer-name">Ricardo Mendes</h4>
+                    <div class="review-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                    </div>
+                  </div>
                 </div>
-                <div class="reviewer-info">
-                  <h4 class="reviewer-name">Ricardo Mendes</h4>
-                  <div class="review-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
+                <div class="review-content">
+                  <p class="review-text">
+                    "A acupuntura no Vital Kali me ajudou com o estresse e ansiedade. Após 3 sessões já senti uma diferença enorme na qualidade do meu sono e no meu equilíbrio emocional."
+                  </p>
+                  <div class="review-service">
+                    <i class="fas fa-circle"></i>
+                    <span>Acupuntura</span>
                   </div>
                 </div>
               </div>
-              <div class="review-content">
-                <p class="review-text">
-                  "A acupuntura me ajudou com o estresse e ansiedade. Após 3 sessões já senti uma diferença enorme na qualidade do meu sono e no meu equilíbrio emocional."
-                </p>
-                <div class="review-service">
-                  <i class="fas fa-circle"></i>
-                  <span>Acupuntura</span>
-                </div>
-              </div>
-            </div>
 
-            <!-- Review 3 -->
-            <div class="review-card">
-              <div class="review-header">
-                <div class="reviewer-avatar">
-                  <i class="fas fa-user-circle"></i>
+              <!-- Review 3 -->
+              <div class="review-card">
+                <div class="review-header">
+                  <div class="reviewer-avatar">
+                    <i class="fas fa-user-circle"></i>
+                  </div>
+                  <div class="reviewer-info">
+                    <h4 class="reviewer-name">Ana Carolina</h4>
+                    <div class="review-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
                 </div>
-                <div class="reviewer-info">
-                  <h4 class="reviewer-name">Ana Carolina</h4>
-                  <div class="review-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+                <div class="review-content">
+                  <p class="review-text">
+                    "As aulas de Yoga no Vital Kali são simplesmente transformadoras. O ambiente acolhedor na Vila Tolstoi e a professora dedicada fazem toda diferença. Encontrei meu espaço de paz!"
+                  </p>
+                  <div class="review-service">
+                    <i class="fas fa-circle"></i>
+                    <span>Yoga Integral</span>
                   </div>
                 </div>
               </div>
-              <div class="review-content">
-                <p class="review-text">
-                  "As aulas de Yoga são simplesmente transformadoras. O ambiente acolhedor e a professora dedicada fazem toda diferença. Encontrei meu espaço de paz!"
-                </p>
-                <div class="review-service">
-                  <i class="fas fa-circle"></i>
-                  <span>Yoga Integral</span>
-                </div>
-              </div>
-            </div>
 
-            <!-- Review 4 -->
-            <div class="review-card">
-              <div class="review-header">
-                <div class="reviewer-avatar">
-                  <i class="fas fa-user-circle"></i>
+              <!-- Review 4 -->
+              <div class="review-card">
+                <div class="review-header">
+                  <div class="reviewer-avatar">
+                    <i class="fas fa-user-circle"></i>
+                  </div>
+                  <div class="reviewer-info">
+                    <h4 class="reviewer-name">Carlos Alberto</h4>
+                    <div class="review-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
                 </div>
-                <div class="reviewer-info">
-                  <h4 class="reviewer-name">Carlos Alberto</h4>
-                  <div class="review-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+                <div class="review-content">
+                  <p class="review-text">
+                    "Como atleta, o acompanhamento no Vital Kali foi essencial para minha recuperação muscular. Profissionais altamente qualificados e ambiente impecável na Vila Tolstoi."
+                  </p>
+                  <div class="review-service">
+                    <i class="fas fa-circle"></i>
+                    <span>Pilates + Acupuntura</span>
                   </div>
                 </div>
               </div>
-              <div class="review-content">
-                <p class="review-text">
-                  "Como atleta, o acompanhamento no Vital Kali foi essencial para minha recuperação muscular. Profissionais altamente qualificados e ambiente impecável."
-                </p>
-                <div class="review-service">
-                  <i class="fas fa-circle"></i>
-                  <span>Pilates + Acupuntura</span>
-                </div>
-              </div>
-            </div>
 
-            <!-- Review 5 -->
-            <div class="review-card">
-              <div class="review-header">
-                <div class="reviewer-avatar">
-                  <i class="fas fa-user-circle"></i>
-                </div>
-                <div class="reviewer-info">
-                  <h4 class="reviewer-name">Fernanda Lima</h4>
-                  <div class="review-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+              <!-- Review 5 -->
+              <div class="review-card">
+                <div class="review-header">
+                  <div class="reviewer-avatar">
+                    <i class="fas fa-user-circle"></i>
+                  </div>
+                  <div class="reviewer-info">
+                    <h4 class="reviewer-name">Fernanda Lima</h4>
+                    <div class="review-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="review-content">
-                <p class="review-text">
-                  "Comecei o Yoga para controlar a ansiedade e hoje não vivo sem! A equipe é maravilhosa e o espaço transmite paz desde o momento que entramos."
-                </p>
-                <div class="review-service">
-                  <i class="fas fa-circle"></i>
-                  <span>Yoga Terapêutico</span>
+                <div class="review-content">
+                  <p class="review-text">
+                    "Comecei o Yoga no Vital Kali para controlar a ansiedade e hoje não vivo sem! A equipe é maravilhosa e o espaço transmite paz desde o momento que entramos."
+                  </p>
+                  <div class="review-service">
+                    <i class="fas fa-circle"></i>
+                    <span>Yoga Terapêutico</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Carousel Navigation -->
-        <div class="carousel-nav">
-          <button class="carousel-prev" aria-label="Avaliação anterior">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="15 18 9 12 15 6"></polyline>
-            </svg>
-          </button>
-          
-          <div class="carousel-indicators">
-            <button class="carousel-indicator active" data-slide="0" aria-label="Ir para avaliação 1"></button>
-            <button class="carousel-indicator" data-slide="2" aria-label="Ir para avaliação 3"></button>
-            <button class="carousel-indicator" data-slide="4" aria-label="Ir para avaliação 5"></button>
+          <!-- Carousel Navigation -->
+          <div class="carousel-nav">
+            <button class="carousel-prev" aria-label="Avaliação anterior">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            
+            <div class="carousel-indicators">
+              <button class="carousel-indicator active" data-slide="0" aria-label="Ir para avaliação 1"></button>
+              <button class="carousel-indicator" data-slide="2" aria-label="Ir para avaliação 3"></button>
+              <button class="carousel-indicator" data-slide="4" aria-label="Ir para avaliação 5"></button>
+            </div>
+            
+            <button class="carousel-next" aria-label="Próxima avaliação">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
           </div>
-          
-          <button class="carousel-next" aria-label="Próxima avaliação">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="9 18 15 12 9 6"></polyline>
-            </svg>
-          </button>
+        </div>
+
+        <div class="reviews-cta">
+          <p class="reviews-cta-text">Quer compartilhar sua experiência no Vital Kali?</p>
+          <a href="https://wa.me/5511976366471?text=Olá!%20Gostaria%20de%20compartilhar%20minha%20experiência%20no%20Vital%20Kali%20Vila%20Tolstoi." 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="reviews-button">
+            <i class="fab fa-whatsapp"></i> Deixe seu feedback
+          </a>
         </div>
       </div>
-
-      <div class="reviews-cta">
-        <p class="reviews-cta-text">Quer compartilhar sua experiência?</p>
-        <a href="https://wa.me/5511976366471?text=Olá!%20Gostaria%20de%20compartilhar%20minha%20experiência%20no%20Vital%20Kali." 
-           target="_blank" 
-           rel="noopener noreferrer" 
-           class="reviews-button">
-          <i class="fab fa-whatsapp"></i> Deixe seu feedback
-        </a>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <!-- Footer -->
   <footer class="site-footer">
@@ -2975,19 +3240,19 @@ html {
         <!-- Logo and Description -->
         <div class="footer-col">
           <div class="footer-logo">
-            <img src="d5997227-cf04-447c-ae5d-3111d809608d.png" alt="Logo Vital Kali">
+            <img src="d5997227-cf04-447c-ae5d-3111d809608d.png" alt="Logo Vital Kali - Estúdio de Pilates, Yoga e Acupuntura Vila Tolstoi">
           </div>
           <p class="footer-description">
-            Espaço de bem-estar dedicado a promover saúde e equilíbrio através de práticas como Pilates, Yoga e Acupuntura.
+            <strong>Vital Kali</strong> - Estúdio de saúde integrativa na Vila Tolstoi, São Paulo. Especializado em Pilates terapêutico, Yoga Vinyasa Flow e Acupuntura para promover equilíbrio e bem-estar.
           </p>
           <div class="footer-social">
-            <a href="https://www.instagram.com/vitalkali/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <a href="https://www.instagram.com/vitalkali_saudeintegrativa/" target="_blank" rel="noopener noreferrer" aria-label="Instagram do Vital Kali">
               <i class="fab fa-instagram"></i>
             </a>
-            <a href="https://wa.me/5511976366471" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <a href="https://wa.me/5511976366471" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp do Vital Kali">
               <i class="fab fa-whatsapp"></i>
             </a>
-            <a href="https://www.facebook.com/vitalkali" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <a href="https://www.facebook.com/vitalkali" target="_blank" rel="noopener noreferrer" aria-label="Facebook do Vital Kali">
               <i class="fab fa-facebook-f"></i>
             </a>
           </div>
@@ -3007,18 +3272,18 @@ html {
 
         <!-- Services -->
         <div class="footer-col">
-          <h3 class="footer-title">Serviços</h3>
+          <h3 class="footer-title">Serviços Vital Kali</h3>
           <ul class="footer-links">
-            <li><a href="#pilates-terapeutico"><i class="fas fa-chevron-right"></i> Pilates Terapêutico</a></li>
-            <li><a href="#yoga-vinyasa"><i class="fas fa-chevron-right"></i> Yoga Vinyasa Flow</a></li>
-            <li><a href="#acupuntura"><i class="fas fa-chevron-right"></i> Acupuntura Sistêmica</a></li>
-            <li><a href="#servicos-detalhados"><i class="fas fa-chevron-right"></i> Todos os Serviços</a></li>
+            <li><a href="pilates.html"><i class="fas fa-chevron-right"></i> Pilates Terapêutico</a></li>
+            <li><a href="yoga.html"><i class="fas fa-chevron-right"></i> Yoga Vinyasa Flow</a></li>
+            <li><a href="acupuntura.html"><i class="fas fa-chevron-right"></i> Acupuntura Sistêmica</a></li>
+            <li><a href="#servicos-detalhados"><i class="fas fa-chevron-right"></i> Saúde Integrativa</a></li>
           </ul>
         </div>
 
         <!-- Contact Info -->
         <div class="footer-col">
-          <h3 class="footer-title">Contato</h3>
+          <h3 class="footer-title">Contato Vital Kali</h3>
           <ul class="footer-contact">
             <li>
               <i class="fas fa-map-marker-alt"></i>
@@ -3030,7 +3295,7 @@ html {
             </li>
             <li>
               <i class="fas fa-envelope"></i>
-              <span>vitalkali@outlook.comr</span>
+              <span>vitalkali@outlook.com</span>
             </li>
             <li>
               <i class="fas fa-clock"></i>
@@ -3042,231 +3307,230 @@ html {
 
       <div class="footer-bottom">
         <p class="footer-copyright">
-           &copy; 2026 - <a href="https://codelinkbrasil.github.io/CodeLink-Brasil/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGn5XdDqy38XTzzNEcCbAtONPTNEjEtsfCEpHyRY9bvDq74Qrxugkv3rd6ai7k_aem_A3moSNQbJs6YbWv4zJ62EQ">CodeLink_Brasil</a>. Todos os direitos reservados.
-
+          &copy; 2024 Vital Kali - Estúdio de Pilates, Yoga e Acupuntura na Vila Tolstoi, São Paulo. Todos os direitos reservados.
         </p>
         <div class="footer-legal">
-          <a href="https://codelinkbrasil.github.io/CodeLink-Brasil/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGn5XdDqy38XTzzNEcCbAtONPTNEjEtsfCEpHyRY9bvDq74Qrxugkv3rd6ai7k_aem_A3moSNQbJs6YbWv4zJ62EQ">Política de Privacidade</a>
-          <a href="https://codelinkbrasil.github.io/CodeLink-Brasil/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGn5XdDqy38XTzzNEcCbAtONPTNEjEtsfCEpHyRY9bvDq74Qrxugkv3rd6ai7k_aem_A3moSNQbJs6YbWv4zJ62EQ">Termos de Uso</a>
+          <a href="politica-privacidade.html">Política de Privacidade</a>
+          <a href="termos-uso.html">Termos de Uso</a>
         </div>
       </div>
     </div>
   </footer>
 
-  <script>
-    // Navigation scroll effect
-    const nav = document.getElementById("navigation")
-    const mobileToggle = document.getElementById("mobileToggle")
-    const mobileMenu = document.getElementById("mobileMenu")
-    const mobileLinks = document.querySelectorAll(".nav-link-mobile")
+   <script>
+      // Navigation scroll effect
+      const nav = document.getElementById("navigation")
+      const mobileToggle = document.getElementById("mobileToggle")
+      const mobileMenu = document.getElementById("mobileMenu")
+      const mobileLinks = document.querySelectorAll(".nav-link-mobile")
 
-    // Mobile menu toggle
-    mobileToggle.addEventListener("click", () => {
-      mobileToggle.classList.toggle("active")
-      mobileMenu.classList.toggle("active")
-      // Fechar menu flutuante se aberto
-      closeFloatingMenu();
-    })
-
-    // Close mobile menu when clicking a link
-    mobileLinks.forEach((link) => {
-      link.addEventListener("click", () => {
-        mobileToggle.classList.remove("active")
-        mobileMenu.classList.remove("active")
+      // Mobile menu toggle
+      mobileToggle.addEventListener("click", () => {
+        mobileToggle.classList.toggle("active")
+        mobileMenu.classList.toggle("active")
+        // Fechar menu flutuante se aberto
+        closeFloatingMenu();
       })
-    })
 
-    // Mobile Accordion
-    const mobileAccordionToggle = document.querySelector('.mobile-accordion-toggle');
-    const mobileAccordionContent = document.querySelector('.mobile-accordion-content');
+      // Close mobile menu when clicking a link
+      mobileLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileToggle.classList.remove("active")
+          mobileMenu.classList.remove("active")
+        })
+      })
 
-    if (mobileAccordionToggle && mobileAccordionContent) {
-      mobileAccordionToggle.addEventListener('click', () => {
-        mobileAccordionToggle.classList.toggle('active');
-        mobileAccordionContent.classList.toggle('active');
-      });
-    }
+      // Mobile Accordion
+      const mobileAccordionToggle = document.querySelector('.mobile-accordion-toggle');
+      const mobileAccordionContent = document.querySelector('.mobile-accordion-content');
 
-    // ==============================
-    // BOTÃO FLUTUANTE COM MENU EXPANDIDO
-    // ==============================
-    const floatingButtonMain = document.getElementById('floatingButtonMain');
-    const floatingButtonMenu = document.getElementById('floatingButtonMenu');
-    const floatingButtonOverlay = document.getElementById('floatingButtonOverlay');
-    let isMenuOpen = false;
-    let isMobile = window.innerWidth <= 768;
+      if (mobileAccordionToggle && mobileAccordionContent) {
+        mobileAccordionToggle.addEventListener('click', () => {
+          mobileAccordionToggle.classList.toggle('active');
+          mobileAccordionContent.classList.toggle('active');
+        });
+      }
 
-    // Função para abrir/fechar menu no mobile
-    function toggleFloatingMenu() {
-      if (isMobile) {
-        isMenuOpen = !isMenuOpen;
-        floatingButtonMenu.classList.toggle('active', isMenuOpen);
-        floatingButtonOverlay.classList.toggle('active', isMenuOpen);
-        
-        if (isMenuOpen) {
-          // Fechar outros menus abertos
-          mobileToggle.classList.remove('active');
-          mobileMenu.classList.remove('active');
-          if (mobileAccordionToggle) {
-            mobileAccordionToggle.classList.remove('active');
-            mobileAccordionContent.classList.remove('active');
+      // ==============================
+      // BOTÃO FLUTUANTE COM MENU EXPANDIDO
+      // ==============================
+      const floatingButtonMain = document.getElementById('floatingButtonMain');
+      const floatingButtonMenu = document.getElementById('floatingButtonMenu');
+      const floatingButtonOverlay = document.getElementById('floatingButtonOverlay');
+      let isMenuOpen = false;
+      let isMobile = window.innerWidth <= 768;
+
+      // Função para abrir/fechar menu no mobile
+      function toggleFloatingMenu() {
+        if (isMobile) {
+          isMenuOpen = !isMenuOpen;
+          floatingButtonMenu.classList.toggle('active', isMenuOpen);
+          floatingButtonOverlay.classList.toggle('active', isMenuOpen);
+          
+          if (isMenuOpen) {
+            // Fechar outros menus abertos
+            mobileToggle.classList.remove('active');
+            mobileMenu.classList.remove('active');
+            if (mobileAccordionToggle) {
+              mobileAccordionToggle.classList.remove('active');
+              mobileAccordionContent.classList.remove('active');
+            }
           }
         }
       }
-    }
 
-    // Função para fechar menu
-    function closeFloatingMenu() {
-      if (isMobile && isMenuOpen) {
-        isMenuOpen = false;
-        floatingButtonMenu.classList.remove('active');
-        floatingButtonOverlay.classList.remove('active');
+      // Função para fechar menu
+      function closeFloatingMenu() {
+        if (isMobile && isMenuOpen) {
+          isMenuOpen = false;
+          floatingButtonMenu.classList.remove('active');
+          floatingButtonOverlay.classList.remove('active');
+        }
       }
-    }
 
-    // Event listeners para o botão flutuante
-    floatingButtonMain.addEventListener('click', function(e) {
-      e.stopPropagation();
-      toggleFloatingMenu();
-    });
+      // Event listeners para o botão flutuante
+      floatingButtonMain.addEventListener('click', function(e) {
+        e.stopPropagation();
+        toggleFloatingMenu();
+      });
 
-    // Fechar menu ao clicar fora (apenas mobile)
-    floatingButtonOverlay.addEventListener('click', closeFloatingMenu);
-    
-    // Fechar menu ao clicar em um link do menu
-    const floatingMenuLinks = floatingButtonMenu.querySelectorAll('a');
-    floatingMenuLinks.forEach(link => {
-      link.addEventListener('click', closeFloatingMenu);
-    });
+      // Fechar menu ao clicar fora (apenas mobile)
+      floatingButtonOverlay.addEventListener('click', closeFloatingMenu);
+      
+      // Fechar menu ao clicar em um link do menu
+      const floatingMenuLinks = floatingButtonMenu.querySelectorAll('a');
+      floatingMenuLinks.forEach(link => {
+        link.addEventListener('click', closeFloatingMenu);
+      });
 
-    // Detectar mudança de tamanho da tela
-    window.addEventListener('resize', function() {
-      isMobile = window.innerWidth <= 768;
-      // Fechar menu se não for mais mobile
-      if (!isMobile) {
-        closeFloatingMenu();
+      // Detectar mudança de tamanho da tela
+      window.addEventListener('resize', function() {
+        isMobile = window.innerWidth <= 768;
+        // Fechar menu se não for mais mobile
+        if (!isMobile) {
+          closeFloatingMenu();
+        }
+      });
+
+      // Hero Carousel functionality
+      const carousel = document.getElementById("heroCarousel")
+      const slides = document.querySelectorAll(".hero-slide")
+      const indicators = document.querySelectorAll(".hero-indicator")
+      const prevButton = document.getElementById("prevSlide")
+      const nextButton = document.getElementById("nextSlide")
+
+      let currentSlide = 0
+      let autoPlayInterval
+      let isPaused = false
+
+      // Function to show a specific slide
+      function showSlide(index) {
+        // Remove active class from all slides and indicators
+        slides.forEach((slide) => slide.classList.remove("hero-slide-active"))
+        indicators.forEach((indicator) => indicator.classList.remove("hero-indicator-active"))
+
+        // Add active class to current slide and indicator
+        slides[index].classList.add("hero-slide-active")
+        indicators[index].classList.add("hero-indicator-active")
+
+        currentSlide = index
       }
-    });
 
-    // Hero Carousel functionality
-    const carousel = document.getElementById("heroCarousel")
-    const slides = document.querySelectorAll(".hero-slide")
-    const indicators = document.querySelectorAll(".hero-indicator")
-    const prevButton = document.getElementById("prevSlide")
-    const nextButton = document.getElementById("nextSlide")
-
-    let currentSlide = 0
-    let autoPlayInterval
-    let isPaused = false
-
-    // Function to show a specific slide
-    function showSlide(index) {
-      // Remove active class from all slides and indicators
-      slides.forEach((slide) => slide.classList.remove("hero-slide-active"))
-      indicators.forEach((indicator) => indicator.classList.remove("hero-indicator-active"))
-
-      // Add active class to current slide and indicator
-      slides[index].classList.add("hero-slide-active")
-      indicators[index].classList.add("hero-indicator-active")
-
-      currentSlide = index
-    }
-
-    // Function to go to next slide
-    function nextSlide() {
-      const next = (currentSlide + 1) % slides.length
-      showSlide(next)
-    }
-
-    // Function to go to previous slide
-    function prevSlide() {
-      const prev = (currentSlide - 1 + slides.length) % slides.length
-      showSlide(prev)
-    }
-
-    // Auto-play functionality
-    function startAutoPlay() {
-      if (!isPaused) {
-        autoPlayInterval = setInterval(nextSlide, 6000)
+      // Function to go to next slide
+      function nextSlide() {
+        const next = (currentSlide + 1) % slides.length
+        showSlide(next)
       }
-    }
 
-    function stopAutoPlay() {
-      clearInterval(autoPlayInterval)
-    }
+      // Function to go to previous slide
+      function prevSlide() {
+        const prev = (currentSlide - 1 + slides.length) % slides.length
+        showSlide(prev)
+      }
 
-    // Event listeners for navigation buttons
-    prevButton.addEventListener("click", () => {
-      prevSlide()
-      stopAutoPlay()
-      startAutoPlay()
-    })
+      // Auto-play functionality
+      function startAutoPlay() {
+        if (!isPaused) {
+          autoPlayInterval = setInterval(nextSlide, 6000)
+        }
+      }
 
-    nextButton.addEventListener("click", () => {
-      nextSlide()
-      stopAutoPlay()
-      startAutoPlay()
-    })
+      function stopAutoPlay() {
+        clearInterval(autoPlayInterval)
+      }
 
-    // Event listeners for indicators
-    indicators.forEach((indicator, index) => {
-      indicator.addEventListener("click", () => {
-        showSlide(index)
+      // Event listeners for navigation buttons
+      prevButton.addEventListener("click", () => {
+        prevSlide()
         stopAutoPlay()
         startAutoPlay()
       })
-    })
 
-    // Pause on hover
-    carousel.addEventListener("mouseenter", () => {
-      isPaused = true
-      stopAutoPlay()
-    })
-
-    carousel.addEventListener("mouseleave", () => {
-      isPaused = false
-      startAutoPlay()
-    })
-
-    // Start auto-play on page load
-    startAutoPlay()
-
-    // Scroll reveal animations
-    function checkScroll() {
-      const elements = document.querySelectorAll(
-        '.benefits-header, .benefit-item, .location-header, .location-content, ' +
-        '.location-address, .location-map, .space-preview-header, ' +
-        '.space-preview-image, .space-feature, .reviews-header, ' +
-        '.reviews-cta, .services-header, .service-card'
-      )
-
-      elements.forEach(element => {
-        const elementTop = element.getBoundingClientRect().top
-        const elementVisible = 150
-
-        if (elementTop < window.innerHeight - elementVisible) {
-          element.classList.add('animate')
-        }
+      nextButton.addEventListener("click", () => {
+        nextSlide()
+        stopAutoPlay()
+        startAutoPlay()
       })
-    }
 
-    // Initial check
-    window.addEventListener('load', checkScroll)
-    // Check on scroll
-    window.addEventListener('scroll', checkScroll)
+      // Event listeners for indicators
+      indicators.forEach((indicator, index) => {
+        indicator.addEventListener("click", () => {
+          showSlide(index)
+          stopAutoPlay()
+          startAutoPlay()
+        })
+      })
 
-    // Smooth scroll for all anchor links with offset
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        const href = this.getAttribute('href');
-        
-        // Skip if it's a service dropdown item (handled separately)
-        if (this.classList.contains('nav-dropdown-item') || 
-            (this.parentElement && this.parentElement.classList.contains('mobile-accordion-content'))) {
-          return;
-        }
-        
-        // Only handle internal anchor links
+      // Pause on hover
+      carousel.addEventListener("mouseenter", () => {
+        isPaused = true
+        stopAutoPlay()
+      })
+
+      carousel.addEventListener("mouseleave", () => {
+        isPaused = false
+        startAutoPlay()
+      })
+
+      // Start auto-play on page load
+      startAutoPlay()
+
+      // Scroll reveal animations
+      function checkScroll() {
+        const elements = document.querySelectorAll(
+          '.benefits-header, .benefit-item, .location-header, .location-content, ' +
+          '.location-address, .location-map, .space-preview-header, ' +
+          '.space-preview-image, .space-feature, .reviews-header, ' +
+          '.reviews-cta, .services-header, .service-card'
+        )
+
+        elements.forEach(element => {
+          const elementTop = element.getBoundingClientRect().top
+          const elementVisible = 150
+
+          if (elementTop < window.innerHeight - elementVisible) {
+            element.classList.add('animate')
+          }
+        })
+      }
+
+      // Initial check
+      window.addEventListener('load', checkScroll)
+      // Check on scroll
+      window.addEventListener('scroll', checkScroll)
+
+      // Smooth scroll for all anchor links with offset
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          const href = this.getAttribute('href');
+          
+          // Skip if it's a service dropdown item (handled separately)
+          if (this.classList.contains('nav-dropdown-item') || 
+              (this.parentElement && this.parentElement.classList.contains('mobile-accordion-content'))) {
+            return;
+          }
+          
+          // Only handle internal anchor links
         if (href.startsWith('#') && href !== '#') {
           e.preventDefault();
           
@@ -3320,17 +3584,19 @@ html {
       });
     });
 
-    // Reviews Carousel Functionality - CORRIGIDO
+    // Reviews Carousel Functionality - CÓDIGO CORRIGIDO
     const reviewsCarousel = document.querySelector('.reviews-carousel');
     const carouselTrack = document.querySelector('.carousel-track');
     const reviewCards = document.querySelectorAll('.review-card');
-    const prevBtn = document.querySelector('.carousel-prev');
-    const nextBtn = document.querySelector('.carousel-next');
+    const reviewsPrevBtn = document.querySelector('.reviews-carousel .carousel-prev'); // SELEÇÃO ESPECÍFICA
+    const reviewsNextBtn = document.querySelector('.reviews-carousel .carousel-next'); // SELEÇÃO ESPECÍFICA
     const carouselIndicators = document.querySelectorAll('.carousel-indicator');
-    
+
     let currentReviewSlide = 0;
     let totalSlides = reviewCards.length;
-    
+    let reviewAutoPlayInterval;
+    let isReviewPaused = false;
+
     // Função para atualizar o carrossel
     function updateCarousel() {
       const containerWidth = reviewsCarousel.offsetWidth;
@@ -3385,8 +3651,8 @@ html {
         }
       });
     }
-    
-    // Funções de navegação
+
+    // Funções de navegação CORRIGIDAS
     function nextReviewSlide() {
       let slidesToShow = 1;
       if (window.innerWidth >= 1024) {
@@ -3403,7 +3669,7 @@ html {
       }
       updateCarousel();
     }
-    
+
     function prevReviewSlide() {
       let slidesToShow = 1;
       if (window.innerWidth >= 1024) {
@@ -3420,48 +3686,73 @@ html {
       }
       updateCarousel();
     }
-    
+
     // Função para ir para slide específico
     function goToSlide(index) {
       currentReviewSlide = index;
       updateCarousel();
     }
-    
-    // Event Listeners
-    prevBtn.addEventListener('click', prevReviewSlide);
-    nextBtn.addEventListener('click', nextReviewSlide);
-    
+
+    // Event Listeners CORRIGIDOS - usando as variáveis específicas para reviews
+    reviewsPrevBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      prevReviewSlide();
+      stopReviewAutoPlay();
+      startReviewAutoPlay();
+    });
+
+    reviewsNextBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      nextReviewSlide();
+      stopReviewAutoPlay();
+      startReviewAutoPlay();
+    });
+
     carouselIndicators.forEach((indicator, index) => {
-      indicator.addEventListener('click', () => {
+      indicator.addEventListener('click', (e) => {
+        e.stopPropagation();
         const targetSlide = index * (window.innerWidth >= 1024 ? 2 : window.innerWidth >= 768 ? 1 : 1);
         goToSlide(targetSlide);
+        stopReviewAutoPlay();
+        startReviewAutoPlay();
       });
     });
-    
-    // Auto-play functionality
-    let reviewAutoPlayInterval;
-    
+
+    // Auto-play functionality para reviews carousel
     function startReviewAutoPlay() {
-      reviewAutoPlayInterval = setInterval(nextReviewSlide, 5000);
+      if (!isReviewPaused) {
+        reviewAutoPlayInterval = setInterval(nextReviewSlide, 5000);
+      }
     }
-    
+
     function stopReviewAutoPlay() {
       clearInterval(reviewAutoPlayInterval);
     }
-    
-    // Pause on hover
-    reviewsCarousel.addEventListener('mouseenter', stopReviewAutoPlay);
-    reviewsCarousel.addEventListener('mouseleave', startReviewAutoPlay);
-    
-    // Inicializar
-    window.addEventListener('load', () => {
-      updateCarousel();
+
+    function resetReviewAutoPlay() {
+      stopReviewAutoPlay();
       startReviewAutoPlay();
-    });
-    
-    window.addEventListener('resize', () => {
-      updateCarousel();
-    });
+    }
+
+    // Pausar no hover
+    if (reviewsCarousel) {
+      reviewsCarousel.addEventListener('mouseenter', () => {
+        isReviewPaused = true;
+        stopReviewAutoPlay();
+      });
+      
+      reviewsCarousel.addEventListener('mouseleave', () => {
+        isReviewPaused = false;
+        startReviewAutoPlay();
+      });
+    }
+
+    // Inicialização
+    updateCarousel();
+    startReviewAutoPlay();
+
+    // Atualizar ao redimensionar a janela
+    window.addEventListener('resize', updateCarousel);
   </script>
 </body>
-</html>                                         
+</html>
